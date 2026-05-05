@@ -10,6 +10,8 @@ website:
         text: Home
       - href: strategic-marketing.qmd
         text: Projects
+      - href: marketing-analytics.qmd
+        text: Marketing Analytics
       - href: resume.qmd
         text: Resume
       - href: contact-me/contact-me.qmd
