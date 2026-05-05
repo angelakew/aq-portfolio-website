@@ -2,7 +2,9 @@
 title: "Technical Projects"
 ---
 
-Below are selected projects that showcase my work in strategic marketing, campaign development, and brand management. These examples highlight how I apply leadership, data-informed decision making, and creative direction to drive marketing success.
+Below are selected projects that showcase my work in strategic marketing, campaign development, analytics, and data-informed decision making.
+
+---
 
 ## TRI Google Ads Optimization & Campaign Strategy Grad Capstone Project (Fall 2025 - Present)
 
@@ -10,40 +12,87 @@ For my client project with the Trauma Resource Institute (TRI), I am leading the
 
 This work involves auditing historical campaign performance, restructuring campaigns based on user intent, and aligning keywords, ad copy, and landing pages to drive higher-quality conversions.
 
-**Skills Demonstrated:**
+### Interactive Report
 
-- **Search Campaign Strategy:** Designed intent-based campaign structure (brand vs. non-brand, segmented by program offerings like CRM and TRM).
-
-- **Keyword & Match Type Optimization:** Evaluated performance at the keyword–match level to improve relevance, CTR, and conversion rate.
-
-- **Conversion-Focused Thinking:** Focused on optimizing for meaningful actions (training sign-ups, donations, and inquiries), not just traffic.
-
-- **Data Analysis & Reporting:** Analyzed search term data, user behavior, and campaign metrics to guide weekly optimization decisions.
-
-- **Cross-Channel Alignment:** Ensured consistency between ad messaging and landing page experience to improve conversion performance.
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAHCM607PYQ/takCMRSBodfQDve6leJxRw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHCM607PYQ&#x2F;takCMRSBodfQDve6leJxRw&#x2F;view?utm_content=DAHCM607PYQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Group 7 Final Capstone Presentation</a>
 
 ---
 
-## IBM6510 Data Analysis Project: Exploratory Data & Insights (Fall 2024)
+## Data Analysis Project: Exploratory Data & Insights (Fall 2024)
 
-As part of my first semester in graduate school, I led the sourcing and development of a dataset-driven analysis project using R and Quarto. I independently identified and curated a real-world animal shelter dataset, then collaborated with my team to clean, analyze, and interpret the data to uncover meaningful insights.
+I led the sourcing and development of a dataset-driven analysis project using R and Quarto. I independently identified and curated a real-world animal shelter dataset, then collaborated with my team to clean, analyze, and interpret the data to uncover meaningful insights.
 
 This project focused on understanding the factors that influence animal adoption outcomes. Through data preparation, feature engineering, and statistical analysis, I examined how variables such as breed type, intake condition, age, and intake source impact the likelihood of adoption.
 
-The analysis included exploratory data analysis, correlation analysis, and logistic regression modeling. During modeling, I identified multicollinearity issues across predictors, which informed how results were interpreted and highlighted limitations in statistical significance despite meaningful variable relationships.
+The analysis included exploratory data analysis, correlation analysis, and logistic regression modeling. During modeling, I identified multicollinearity issues across predictors, which informed how results were interpreted.
 
-**Skills Demonstrated:**
+### Interactive Report
 
-- **Data Sourcing & Preparation:** Identified and evaluated an external dataset, then cleaned and structured it using R (`tidyverse`, `janitor`, `rio`).
-- **Feature Engineering:** Created binary indicators for breed categories, intake conditions, and adoption outcomes to support modeling.
-- **Exploratory Data Analysis (EDA):** Analyzed trends in adoption rates across intake type, age, and breed classifications.
-- **Statistical Modeling:** Built logistic regression models to evaluate factors influencing adoption likelihood.
-- **Analytical Thinking:** Diagnosed multicollinearity and interpreted model limitations in a real-world dataset.
-- **Data Visualization:** Used correlation matrices and plots to communicate relationships between key variables.
-- **Reproducible Reporting:** Developed a Quarto-based report integrating code, outputs, and narrative insights.
+<iframe src="https://angelakew.github.io/dataset-project/" width="100%" height="600" style="border: none;"></iframe>
+---
 
+## Beyond Meat: Digital Marketing & Competitive Strategy Analysis (Fall 2025)
+
+In this project, I analyzed how Beyond Meat can shift consumer behavior and increase adoption of plant-based alternatives through targeted digital marketing and strategic positioning.
+
+I focused specifically on evaluating digital marketing practices and the competitive landscape, identifying how Beyond Meat can compete against both traditional meat products and other plant-based brands through pricing, messaging, and channel strategy.
+
+Building on consumer behavior frameworks, I explored how marketing tactics such as search ads, retail media, and social content can influence perception, reduce adoption barriers, and drive repeat purchase behavior.
+
+### Interactive Report
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; margin-top: 1.5em; margin-bottom: 1em;">
+  <iframe 
+    src="https://www.canva.com/design/DAG0Z0uNRSI/Dx80MtkX8hCFYJuuR5uazQ/view?embed" 
+    style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+<p style="text-align: center;">
+  <a href="https://www.canva.com/design/DAG0Z0uNRSI/Dx80MtkX8hCFYJuuR5uazQ/view" target="_blank">
+    View Full Report
+  </a>
+</p>
+---
+
+## Demand Forecasting with Regression & Machine Learning in the Construction Industry (Spring 2025)
+
+This project explores demand forecasting in a construction machinery context using both traditional statistical models and advanced machine learning techniques.
+
+Based on a real-world study, I analyzed how different modeling approaches—including linear regression, nonlinear regression, artificial neural networks (ANN), and support vector regression (SVR)—perform in predicting spare parts demand.
+
+The analysis integrates multiple data sources, including historical ERP sales data, global machinery sales trends, exchange rates, and engineered variables such as a monthly impact rate to capture seasonality and demand fluctuations.
+
+Key insights showed that while regression models provide interpretability, machine learning approaches—particularly SVR and ANN—achieve higher forecast accuracy by capturing nonlinear patterns and complex relationships in the data.  
 ---
 
 ### Interactive Report
 
-<iframe src="https://angelakew.github.io/dataset-project/" width="100%" height="600px" style="border: none;"></iframe>
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGkUQwReMc/5_qGP17wO9vsM57_6jTO9w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGkUQwReMc&#x2F;5_qGP17wO9vsM57_6jTO9w&#x2F;view?utm_content=DAGkUQwReMc&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">AI Construction</a> by Angela Qian
+---
+
+## Dave's Hot Chicken Marketing Campaign (Fall 2024)
+
+This project presents an integrated marketing campaign strategy for Dave’s Hot Chicken, focused on expanding brand reach while maintaining its authentic, high-engagement social media presence.
+
+The campaign combines organic social media growth, paid advertising, and brand experience strategies to strengthen customer engagement and drive long-term brand loyalty.
+
+### Interactive Report
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRwNem4AwBgANXj61wIBXBDnXhhs2vvstVumIYtbfz3mcWVcxHXd_srTgXXZUo-6w/pub?start=true&loop=true&delayms=5000" width="100%" height="600" style="border: none;"></iframe>
+---
