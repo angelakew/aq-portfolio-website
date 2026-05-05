@@ -23,106 +23,169 @@
   {
     "objectID": "strategic-marketing.html",
     "href": "strategic-marketing.html",
-    "title": "Strategic Marketing",
+    "title": "Technical Projects",
     "section": "",
     "text": "Below are selected projects that showcase my work in strategic marketing, campaign development, and brand management. These examples highlight how I apply leadership, data-informed decision making, and creative direction to drive marketing success."
   },
   {
-    "objectID": "strategic-marketing.html#project-title-1-strategic-campaign-planning",
-    "href": "strategic-marketing.html#project-title-1-strategic-campaign-planning",
-    "title": "Strategic Marketing",
-    "section": "[Project Title 1: Strategic Campaign Planning]",
-    "text": "[Project Title 1: Strategic Campaign Planning]\nIn this project, I led the development of a comprehensive marketing campaign for [product, service, or initiative]. From audience segmentation to messaging strategy, I managed the full lifecycle of the campaign, aligning it with business objectives and measurable KPIs.\nSkills Demonstrated:\n\nMarketing Strategy: Defined objectives and tactics for maximum impact.\nTeam Coordination: Oversaw collaboration across creative, data, and channel teams.\nPerformance Tracking: Implemented real-time metrics and post-campaign analysis.\nBrand Positioning: Ensured consistency across all touchpoints."
+    "objectID": "strategic-marketing.html#tri-google-ads-optimization-campaign-strategy-grad-capstone-project-fall-2025---present",
+    "href": "strategic-marketing.html#tri-google-ads-optimization-campaign-strategy-grad-capstone-project-fall-2025---present",
+    "title": "Technical Projects",
+    "section": "TRI Google Ads Optimization & Campaign Strategy Grad Capstone Project (Fall 2025 - Present)",
+    "text": "TRI Google Ads Optimization & Campaign Strategy Grad Capstone Project (Fall 2025 - Present)\nFor my client project with the Trauma Resource Institute (TRI), I am leading the development and optimization of Google Ads campaigns to improve lead generation and maximize the impact of the Google Ads grant.\nThis work involves auditing historical campaign performance, restructuring campaigns based on user intent, and aligning keywords, ad copy, and landing pages to drive higher-quality conversions.\nSkills Demonstrated:\n\nSearch Campaign Strategy: Designed intent-based campaign structure (brand vs. non-brand, segmented by program offerings like CRM and TRM).\nKeyword & Match Type Optimization: Evaluated performance at the keyword–match level to improve relevance, CTR, and conversion rate.\nConversion-Focused Thinking: Focused on optimizing for meaningful actions (training sign-ups, donations, and inquiries), not just traffic.\nData Analysis & Reporting: Analyzed search term data, user behavior, and campaign metrics to guide weekly optimization decisions.\nCross-Channel Alignment: Ensured consistency between ad messaging and landing page experience to improve conversion performance."
   },
   {
-    "objectID": "strategic-marketing.html#project-title-2-brand-audit-positioning",
-    "href": "strategic-marketing.html#project-title-2-brand-audit-positioning",
-    "title": "Strategic Marketing",
-    "section": "[Project Title 2: Brand Audit & Positioning]",
-    "text": "[Project Title 2: Brand Audit & Positioning]\nThis initiative involved conducting a full brand audit for [organization or brand], evaluating its current market perception, competitive landscape, and customer engagement. I synthesized insights into a refreshed brand strategy and visual identity recommendations.\nSkills Demonstrated:\n\nBrand Analysis: Audited messaging, tone, and visual identity.\nCompetitive Benchmarking: Evaluated brand positioning within the market.\nStrategic Communication: Developed new value propositions and storytelling elements.\nStakeholder Presentation: Delivered recommendations to senior leadership."
-  },
-  {
-    "objectID": "strategic-marketing.html#project-title-3-product-launch-go-to-market-plan",
-    "href": "strategic-marketing.html#project-title-3-product-launch-go-to-market-plan",
-    "title": "Strategic Marketing",
-    "section": "[Project Title 3: Product Launch Go-to-Market Plan]",
-    "text": "[Project Title 3: Product Launch Go-to-Market Plan]\nFor the release of [new product/service], I created a go-to-market (GTM) strategy from scratch. This included customer journey mapping, channel mix planning, and launch timeline coordination.\nSkills Demonstrated:\n\nGo-to-Market Strategy: Developed a clear launch roadmap aligned with buyer needs.\nIntegrated Marketing: Orchestrated email, paid ads, social, and on-site promotions.\nBudget Management: Allocated resources efficiently across tactics.\nLaunch Optimization: Tracked performance and refined tactics in real time.\n\nBelow is an embedded demonstration of the interactive report:"
-  },
-  {
-    "objectID": "strategic-marketing.html#project-title-4-client-consulting-campaign-optimization",
-    "href": "strategic-marketing.html#project-title-4-client-consulting-campaign-optimization",
-    "title": "Strategic Marketing",
-    "section": "[Project Title 4: Client Consulting & Campaign Optimization]",
-    "text": "[Project Title 4: Client Consulting & Campaign Optimization]\nI collaborated with a client to assess and optimize their existing marketing efforts. Through audits, persona development, and campaign refinement, I helped improve ROI and audience engagement.\nSkills Demonstrated:\n\nClient Consulting: Provided clear insights and strategic guidance.\nPersona Development: Built target personas to guide messaging.\nCampaign Optimization: Identified and addressed areas of underperformance.\nData-Driven Adjustments: Leveraged analytics to refine tactics."
-  },
-  {
-    "objectID": "listings/01-campaign-insights-dashboard.html",
-    "href": "listings/01-campaign-insights-dashboard.html",
-    "title": "Campaign Insights Dashboard",
-    "section": "",
-    "text": "Overview\nThis project involved building a dashboard to track and visualize marketing campaign performance. Metrics like click-through rate, conversion rate, and ROI were tracked across channels using R and Tableau.\n\n\n\n\nLearning Outcomes\n\nVisualize and monitor key marketing metrics.\n\nAnalyze performance trends across multiple campaigns.\n\nIdentify high- and low-performing segments.\n\nCommunicate insights through interactive visuals.\n\nDevelop data-informed recommendations.\n\n\n\n\nKey Skills Gained\n\nDashboard development\n\nCampaign analytics\n\nData wrangling in R\n\nTableau or R Shiny visualization\n\nPerformance measurement"
-  },
-  {
-    "objectID": "listings/04-funnel-attribution-model.html",
-    "href": "listings/04-funnel-attribution-model.html",
-    "title": "Marketing Funnel Attribution Model",
-    "section": "",
-    "text": "Overview\nThis project developed a marketing attribution model to assign credit to touchpoints throughout the conversion journey. The insights supported channel optimization and budget reallocation.\n\n\n\n\nLearning Outcomes\n\nTrack multi-touch customer journeys.\n\nModel attribution using first-touch, last-touch, and linear approaches.\n\nVisualize funnel performance.\n\nQuantify channel impact on conversion.\n\nGuide future campaign investment decisions.\n\n\n\n\nKey Skills Gained\n\nAttribution modeling\n\nFunnel analysis\n\nData visualization\n\nCampaign performance analysis\n\nR or Python analytics pipelines"
-  },
-  {
-    "objectID": "listings/02-seo-benchmarking-analysis.html",
-    "href": "listings/02-seo-benchmarking-analysis.html",
-    "title": "SEO Benchmarking Analysis",
-    "section": "",
-    "text": "Overview\nThis project compared SEO performance across competitors, highlighting keyword gaps, backlink profiles, and content effectiveness. Insights were used to guide an improved content and SEO strategy.\n\n\n\n\nLearning Outcomes\n\nIdentify keyword opportunities through competitive research.\n\nTrack and compare domain authority and page rankings.\n\nRecommend on-page SEO improvements.\n\nDesign a data-driven SEO content strategy.\n\nVisualize competitor positioning.\n\n\n\n\nKey Skills Gained\n\nKeyword research\n\nWeb scraping & data cleaning\n\nSEO analysis tools\n\nData storytelling\n\nStrategy development"
+    "objectID": "strategic-marketing.html#ibm6510-data-analysis-project-exploratory-data-insights-fall-2024",
+    "href": "strategic-marketing.html#ibm6510-data-analysis-project-exploratory-data-insights-fall-2024",
+    "title": "Technical Projects",
+    "section": "IBM6510 Data Analysis Project: Exploratory Data & Insights (Fall 2024)",
+    "text": "IBM6510 Data Analysis Project: Exploratory Data & Insights (Fall 2024)\nAs part of my first semester in graduate school, I led the sourcing and development of a dataset-driven analysis project using R and Quarto. I independently identified and curated a real-world animal shelter dataset, then collaborated with my team to clean, analyze, and interpret the data to uncover meaningful insights.\nThis project focused on understanding the factors that influence animal adoption outcomes. Through data preparation, feature engineering, and statistical analysis, I examined how variables such as breed type, intake condition, age, and intake source impact the likelihood of adoption.\nThe analysis included exploratory data analysis, correlation analysis, and logistic regression modeling. During modeling, I identified multicollinearity issues across predictors, which informed how results were interpreted and highlighted limitations in statistical significance despite meaningful variable relationships.\nSkills Demonstrated:\n\nData Sourcing & Preparation: Identified and evaluated an external dataset, then cleaned and structured it using R (tidyverse, janitor, rio).\nFeature Engineering: Created binary indicators for breed categories, intake conditions, and adoption outcomes to support modeling.\nExploratory Data Analysis (EDA): Analyzed trends in adoption rates across intake type, age, and breed classifications.\nStatistical Modeling: Built logistic regression models to evaluate factors influencing adoption likelihood.\nAnalytical Thinking: Diagnosed multicollinearity and interpreted model limitations in a real-world dataset.\nData Visualization: Used correlation matrices and plots to communicate relationships between key variables.\nReproducible Reporting: Developed a Quarto-based report integrating code, outputs, and narrative insights.\n\n\n\nInteractive Report"
   },
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "Résumé",
+    "title": "Professional Resume",
     "section": "",
-    "text": "Warning in attr(x, \"match.length\"): 'xfun::attr()' is deprecated.\nUse 'xfun::attr2()' instead.\nSee help(\"Deprecated\")\nWarning in attr(x, \"match.length\"): 'xfun::attr()' is deprecated.\nUse 'xfun::attr2()' instead.\nSee help(\"Deprecated\")\nWarning in attr(x, \"match.length\"): 'xfun::attr()' is deprecated.\nUse 'xfun::attr2()' instead.\nSee help(\"Deprecated\")\n\n\nYou can view a PDF version of my résumé here.\n\nProfessional Summary\nResults-oriented marketing and analytics professional with a strong foundation in data analysis, digital strategy, and performance reporting. Skilled in leveraging analytics tools and programming languages to uncover insights and support decision-making across cross-functional teams.\n\n\nTechnical Skills\n\nProgramming Languages: R, Python, SQL, etc.\n\nWeb Technologies: HTML, CSS/SCSS, JavaScript, Quarto, CMS Platforms, Analytics Tools\n\n\n\nEducation\n\n\n\n\n\n\n\n\n\nDegree\nYear\nCollege / Department\nInstitution\n\n\n\n\n[Your Degree]\n[Start – Graduation Year]\n[Your College or Department]\n[Your University]\n\n\n[Previous Degree or Certification]\n[Start – End Year]\n[Your College or Department]\n[Your University]\n\n\n\n\n\nWork Experience\n\n[Job Title], [Company or Organization]\n[Start Date – End Date]\n\n[Responsibility or accomplishment #1]\n\n[Responsibility or accomplishment #2]\n\n[Responsibility or accomplishment #3]\n\n[Technical tools, collaboration, or outcomes]\n\n[Any metrics, impacts, or stakeholder involvement]\n\n\n\n\n[Job Title], [Company or Organization]\n[Start Date – End Date]\n\n[Responsibility or accomplishment #1]\n\n[Responsibility or accomplishment #2]\n\n[Team leadership, training, or development]\n\n[Projects involving marketing, data, or web technologies]\n\n[Toolset used or strategies implemented]"
+    "text": "You can view or download a PDF version of my resume here."
   },
   {
-    "objectID": "listings/03-customer-segmentation-clustering.html",
-    "href": "listings/03-customer-segmentation-clustering.html",
-    "title": "Customer Segmentation Using Clustering",
-    "section": "",
-    "text": "Overview\nIn this analysis, customer data was segmented using clustering algorithms to identify meaningful groups. These segments informed targeting strategies and personalization efforts.\n\n\n\n\nLearning Outcomes\n\nClean and prepare customer-level data.\n\nApply clustering techniques to group similar customers.\n\nInterpret clusters to define marketing personas.\n\nRecommend tailored messaging strategies.\n\nSupport targeted campaign development.\n\n\n\n\nKey Skills Gained\n\nK-means clustering\n\nData preprocessing\n\nCustomer profiling\n\nMarket segmentation strategy\n\nR or Python for machine learning"
+    "objectID": "resume.html#professional-summary",
+    "href": "resume.html#professional-summary",
+    "title": "Professional Resume",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nDigital Marketing Analytics graduate student with a background in employee benefits, client relations, reporting, and financial analysis. Experienced in supporting large group accounts, preparing client-facing deliverables, and translating complex information into clear, actionable insights. Interested in applying data, analytics, and technology to improve strategy and reporting within the insurance and employee benefits space."
   },
   {
-    "objectID": "listings/05-social-media-engagement.html",
-    "href": "listings/05-social-media-engagement.html",
-    "title": "Social Media Engagement Analysis",
-    "section": "",
-    "text": "Overview\nThis analysis examined engagement metrics across multiple social media platforms to identify content trends, audience preferences, and posting strategies that drive performance.\n\n\n\n\nLearning Outcomes\n\nAggregate and clean social media data.\n\nIdentify high-performing content formats.\n\nUnderstand audience behavior and peak times.\n\nSupport social strategy with data-backed recommendations.\n\nVisualize results in an executive summary.\n\n\n\n\nKey Skills Gained\n\nSocial analytics\n\nPlatform metric APIs\n\nContent performance tracking\n\nAudience insights\n\nStrategic planning"
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Professional Resume",
+    "section": "Education",
+    "text": "Education\nCalifornia State Polytechnic University, Pomona\nM.S. Digital Marketing (Marketing Analytics)\n\nAugust 2024 – May 2026\n\nUniversity of California, San Diego\nB.A. Communications (Marketing and Public Relations)\n\nSeptember 2016 – March 2019"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Professional Resume",
+    "section": "Experience",
+    "text": "Experience\n\nEPIC Insurance Brokers & Consultants\nClient Coordinator, Employee Benefits\nJanuary 2024 – August 2024\n\nServed as the primary point of contact for Client Executives, directly reporting on all requested deliverables to streamline compliance processes and optimize the delivery of marketing materials to clients, ensuring consistent alignment with regulatory standards and client expectations.\nStrategically managed a diverse portfolio of approximately 15 large group accounts, each with over 500 employees, alongside multiple smaller divisions, providing personalized support and proactive account management to maintain client satisfaction and retention.\nProvided expert assistance in resolving complex client and employee issues, including benefit claim disputes, eligibility concerns, and policy inquiries, ensuring timely resolution and maintaining strong client relationships.\nCultivated and sustained successful, mutually beneficial relationships with a wide network of stakeholders, including clients, insurance carriers, and third-party administrators, fostering collaboration and clear communication.\nLeveraged industry-leading BenAdmin platforms, including BenefitPoint, to accurately manage and maintain all policy details, commission structures, and documentation, ensuring transparency, compliance, and data integrity.\nDesigned and delivered comprehensive financial reports, renewal presentations, and client brochures, incorporating key marketing metrics, benchmarking data, and commission analysis to support informed decision-making and client retention strategies.\n\n\n\nSuvaun, Acrisure LLC Agency Partner\nMarketing Account Coordinator\nMarch 2020 – January 2024\n\nSpearheaded and led comprehensive pre-sale marketing initiatives for small accounts, driving targeted outreach strategies that effectively captured and engaged prospective clients while maximizing lead conversion.\nStrategically managed the end-to-end Request for Proposal (RFP) marketing process, guiding broker users from initial engagement through successful implementation, ensuring a seamless and efficient experience that met client expectations.\nCultivated and maintained strong, strategic relationships with a diverse range of carrier vendors, serving as a trusted liaison between carriers and clients, facilitating clear communication, negotiation, and conflict resolution.\nCollaborated cross-functionally with an international outsourcing team, providing expert guidance on leveraging advanced features within Suvaun, overseeing task execution to ensure accuracy, efficiency, and adherence to best practices.\nDelivered comprehensive training and onboarding programs for both internal team members and external broker partners, enhancing user proficiency and fostering a strong foundation for long-term success.\n\n\n\nL.A. Pinnacle Insurance Agency\nBenefits Marketing & Admin Assistant\nApril 2019 – March 2020\n\nSupported administration of group and individual health insurance plans, ensuring accurate enrollments, terminations, and policy updates.\nManaged day-to-day client and employee requests, including claims support, eligibility verification, and billing inquiries.\nCoordinated with carriers and vendors to resolve coverage issues and maintain compliance with policy requirements.\nPrepared renewal comparisons, rate summaries, and marketing packages to support broker recommendations.\nUtilized Excel and Word & Brown to organize client data, track plan details, and streamline reporting processes."
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Professional Resume",
+    "section": "Skills",
+    "text": "Skills\n\nAnalytics: GA4, BigQuery, SQL, R, Quarto, Looker Studio\nMarketing: Google Ads, campaign analysis, conversion tracking, reporting\nEmployee Benefits: RFP support, renewal analysis, rate guides, client reporting\nPlatforms: BenefitPoint, EASE, Employee Navigator, Microsoft Office, SharePoint, Asana"
+  },
+  {
+    "objectID": "resume.html#certifications",
+    "href": "resume.html#certifications",
+    "title": "Professional Resume",
+    "section": "Certifications",
+    "text": "Certifications\nCalifornia Department of Insurance\nIssued: 2019 Expires: 2027 Accident, Health & Life Agent License #0N12658\nCPP Data Wrangling & Visualization\nIssued Fall 2024 Bootcamp Certification"
+  },
+  {
+    "objectID": "resume.html#languages",
+    "href": "resume.html#languages",
+    "title": "Professional Resume",
+    "section": "Languages",
+    "text": "Languages\nEnglish and Mandarin Chinese"
   },
   {
     "objectID": "resume/Resume.html",
     "href": "resume/Resume.html",
-    "title": "Professional Summary",
+    "title": "Resume",
     "section": "",
-    "text": "Professional Summary\nMotivated and detail-oriented marketing and analytics professional with a strong background in data interpretation, campaign strategy, and digital tools. Skilled in turning insights into action and communicating value across business teams.\n\n\nTechnical Skills\n\nProgramming Languages: R, Python, SQL, etc.\n\nWeb Technologies: HTML, CSS/SCSS, Quarto, CMS, Google Analytics, etc.\n\n\n\nEducation\n\n\n# A tibble: 2 × 5\n  what                     when                            with      where why  \n  &lt;chr&gt;                    &lt;chr&gt;                           &lt;chr&gt;     &lt;chr&gt; &lt;lis&gt;\n1 Master of [Your Field]   20XX – Expected Graduation 20XX [Your Sc… [You… &lt;chr&gt;\n2 Bachelor of [Your Field] 20XX – 20XX                     [Your Sc… [You… &lt;chr&gt;\n\n\n\n\nWork Experience\n\n\n# A tibble: 2 × 5\n  what      when                    with                         where why   \n  &lt;chr&gt;     &lt;chr&gt;                   &lt;chr&gt;                        &lt;chr&gt; &lt;list&gt;\n1 Job Title Month YYYY – Month YYYY Company or Organization Name &lt;NA&gt;  &lt;list&gt;\n2 Job Title Month YYYY – Month YYYY Another Company or Team      &lt;NA&gt;  &lt;list&gt;"
+    "text": "Los Angeles, CA\nLinkedIn\nEmail: angeluhqian@gmail.com"
+  },
+  {
+    "objectID": "resume/Resume.html#angela-qian",
+    "href": "resume/Resume.html#angela-qian",
+    "title": "Resume",
+    "section": "",
+    "text": "Los Angeles, CA\nLinkedIn\nEmail: angeluhqian@gmail.com"
+  },
+  {
+    "objectID": "resume/Resume.html#education",
+    "href": "resume/Resume.html#education",
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\nCalifornia State Polytechnic University, Pomona\nM.S. Digital Marketing, Concentration in Marketing Analytics\nAugust 2024 – May 2026\nUniversity of California, San Diego\nB.A. Communications, Concentration in Marketing and Public Relations\nSeptember 2016 – March 2019"
+  },
+  {
+    "objectID": "resume/Resume.html#experience",
+    "href": "resume/Resume.html#experience",
+    "title": "Resume",
+    "section": "Experience",
+    "text": "Experience\n\nEPIC Insurance Brokers & Consultants\nClient Coordinator, Employee Benefits\nJanuary 2024 – August 2024\n\nSupported Client Executives with compliance, marketing, and reporting deliverables.\nManaged a book of approximately 15 large group accounts with 500+ employees.\nAssisted with client and employee issue resolution, including claims and billing discrepancies.\nCreated financial reports, benchmark reports, team metrics, and commission activity reports.\nUsed BenefitPoint and other BenAdmin platforms to manage policy and account details.\n\n\n\nSuvaun, Acrisure LLC Agency Partner\nMarketing Account Coordinator\nMarch 2020 – January 2024\n\nLed small group marketing RFP processes from data collection through implementation.\nAudited renewal and prospect data from EASE and Employee Navigator.\nBuilt customized RFPs, rate guides, and broker-facing presentations.\nCoordinated with carrier vendors, broker partners, and outsourcing teams.\nSupported internal and user training for onboarding broker partners.\n\n\n\nL.A. Pinnacle Insurance Agency\nBenefits Assistant\nApril 2019 – March 2020\n\nSupported lead broker with group and individual health insurance policies.\nManaged enrollments, terminations, premium payments, and claims support.\nPrepared renewal charts and marketing packages using Excel and Word & Brown."
+  },
+  {
+    "objectID": "resume/Resume.html#certifications",
+    "href": "resume/Resume.html#certifications",
+    "title": "Resume",
+    "section": "Certifications",
+    "text": "Certifications\nCalifornia Department of Insurance\nAccident, Health & Life Agent License #0N12658"
+  },
+  {
+    "objectID": "resume/Resume.html#skills",
+    "href": "resume/Resume.html#skills",
+    "title": "Resume",
+    "section": "Skills",
+    "text": "Skills\nGA4, BigQuery, SQL, R, Quarto, Google Ads, Marketing Analytics, Client Reporting, RFP Management, Rate Analysis, Employee Benefits, BenefitPoint, EASE, Employee Navigator, Microsoft Office, Asana, SharePoint"
+  },
+  {
+    "objectID": "resume/Resume.html#languages",
+    "href": "resume/Resume.html#languages",
+    "title": "Resume",
+    "section": "Languages",
+    "text": "Languages\nEnglish and Mandarin Chinese"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to my Portfolio",
+    "section": "",
+    "text": "I’m a Digital Marketing Analytics graduate student pursuing opportunities at the intersection of data, technology, and insurance. With a foundation in client relations, I specialize in transforming complex data into clear, actionable insights that support strategic decision-making and improve customer outcomes."
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
-    "title": "Hi, I’m [Your Name Here]",
+    "title": "Welcome to my Portfolio",
     "section": "About Me",
-    "text": "About Me\nI hold a [Your Degree or Current Program] from [Your Institution]."
+    "text": "About Me\nI’m currently pursuing a Master of Science in Digital Marketing (Marketing Analytics) at Cal Poly Pomona, and hold a Bachelor of Arts in Communications from UC San Diego. I have a background in client relations within the insurance industry, where I supported large group accounts and developed experience in data analysis, reporting, and strategic decision-making."
+  },
+  {
+    "objectID": "index.html#what-i-do",
+    "href": "index.html#what-i-do",
+    "title": "Welcome to my Portfolio",
+    "section": "What I Do",
+    "text": "What I Do\nI focus on answering questions like:\n\nHow can data improve client strategy and decision-making in employee benefits?\nHow can we better analyze plan performance, costs, and trends across large group accounts?\nHow can reporting be streamlined to deliver clearer insights for clients and stakeholders?\nHow can technology and analytics tools be used to modernize traditionally manual processes?\nHow can we turn complex benefits data into clear, actionable insights?"
+  },
+  {
+    "objectID": "index.html#tools-skills",
+    "href": "index.html#tools-skills",
+    "title": "Welcome to my Portfolio",
+    "section": "Tools & Skills",
+    "text": "Tools & Skills\n\nGoogle Analytics 4 (GA4)\nGoogle Ads\nBigQuery and SQL\nR and Quarto\nData visualization\nMarketing analytics\nClient reporting and stakeholder communication"
   },
   {
     "objectID": "index.html#lets-connect",
     "href": "index.html#lets-connect",
-    "title": "Hi, I’m [Your Name Here]",
+    "title": "Welcome to my Portfolio",
     "section": "Let’s Connect",
-    "text": "Let’s Connect\nYou can email me or connect on LinkedIn.\n\nWelcome to my portfolio."
+    "text": "Let’s Connect\nEmail: angeluhqian@gmail.com\nLinkedIn: linkedin.com/in/qianangela1"
   },
   {
     "objectID": "contact-us/contact-us.html",
     "href": "contact-us/contact-us.html",
-    "title": "Contact Us",
+    "title": "Contact",
     "section": "",
-    "text": "Template"
+    "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n\nEmail: angeluhqian@gmail.com\nLinkedIn: linkedin.com/in/qianangela1\n\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
+  },
+  {
+    "objectID": "contact-us/contact-us.html#lets-connect",
+    "href": "contact-us/contact-us.html#lets-connect",
+    "title": "Contact",
+    "section": "",
+    "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n\nEmail: angeluhqian@gmail.com\nLinkedIn: linkedin.com/in/qianangela1\n\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
   }
 ]

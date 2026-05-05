@@ -1,89 +1,160 @@
-/*-------------------------------------------------
-  Generic SCSS Starter
-  Replace the sample values with your own brand
---------------------------------------------------*/
-
 /*-- scss:defaults --*/
 
-// ── Brand Palette ────────────────────────────────
-$color-primary:   #123456;  // ← Replace with brand primary
-$color-secondary: #ABCDEF;  // ← Replace with brand secondary
+$primary: #89CFF0;
+$secondary: #EAF6FD;
+$body-bg: #EAF6FF;
+$body-color: #1f2933;
+$link-color: #2f80b7;
 
-// Optional accent & neutral tones
-$accent-1:  #FF7F00;  // e.g., highlight / link
-$accent-2:  #A6CE6E;  // e.g., success
-$neutral-0: #FFFFFF;  // light / backgrounds
-$neutral-1: #F5F5F5;  // eggshell / subtle sections
-$neutral-9: #121212;  // near-black text
-
-// ── Typography ──────────────────────────────────
-$font-primary:    Arial, sans-serif;
-$font-secondary:  Georgia, serif;
-$font-body:       $font-primary;
-
-// ── Derived / utility variables ─────────────────
-$color-secondary-dark: darken($color-secondary, 10%);
+$font-family-sans-serif: "League Spartan", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$headings-font-family: "League Spartan", system-ui, sans-serif;
+$headings-font-weight: 800;
 
 /*-- scss:rules --*/
 
-/* Global body styles */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap');
+
 body {
-  font-family: $font-body;
-  color: $neutral-9;
-  background-color: $neutral-1;
-  margin: 0;
-  padding: 0;
+  background: #eaf6ff !important;
+  color: #1f2933;
+  font-family: "League Spartan", system-ui, sans-serif !important;
+  line-height: 1.65;
+  font-size: 1.08rem;
 }
 
-/* Headings */
+main {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 2.5rem !important;
+  margin-top: 2rem;
+  box-shadow: 0 20px 60px rgba(137, 207, 240, 0.22);
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-primary;
-  font-weight: bold;
-  margin-top: 0;
+  font-family: "League Spartan", system-ui, sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em;
+  color: #2f6690 !important;
 }
 
-h1 { color: $color-primary;   }
-h2 { color: $color-secondary-dark; }
-h3 { color: $accent-1;        }
-
-/* Paragraphs */
-p {
-  font-size: 1em;
-  line-height: 1.5;
-  color: $neutral-9;
+h1 {
+  font-size: 2.9rem;
+  line-height: 1.05;
 }
 
-/* Links */
+.columns h1 {
+  font-size: 2.5rem !important;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  border-bottom: 1px solid #d6ecfa;
+  padding-bottom: 0.4rem;
+}
+
+p, li, a, span {
+  font-family: "League Spartan", system-ui, sans-serif !important;
+}
+
+.navbar {
+  background: #dff3ff !important;
+  border-bottom: 1px solid #b8e2f7 !important;
+  backdrop-filter: blur(12px);
+}
+
+.navbar-title,
+.navbar-nav .nav-link {
+  font-family: "League Spartan", system-ui, sans-serif !important;
+  font-weight: 700 !important;
+  color: #1f2933 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2f6690 !important;
+}
+
 a {
-  color: $accent-1;
+  color: #2f80b7 !important;
+  font-weight: 700;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
-/* Code blocks */
-pre code {
-  background: $neutral-9;
-  color: $color-secondary;
-  font-size: 1em;
-  padding: 0.9em 1.1em;
-  border-radius: 5px;
-  border: 2px solid $accent-2;
-  overflow-x: auto;
+a:hover {
+  color: #2f6690 !important;
+  text-decoration: underline;
 }
 
-/* Highlight utility */
 .highlight {
-  background-color: $accent-1;
-  color: $neutral-0;
-  padding: 0.2em 0.4em;
-  border-radius: 0.2em;
+  background: #d6ecfa;
+  color: #2f6690;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.4rem;
+  font-weight: 800;
 }
 
-/* Example animation (optional) */
-@keyframes progressColor {
-  0%   { background-color: $color-primary;   }
-  100% { background-color: $color-secondary; }
+.profile-img {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 18px 45px rgba(137, 207, 240, 0.55) !important;
+}
+
+.columns {
+  align-items: center;
+}
+
+.hero-adjust {
+  margin-top: 28px;
+}
+
+.card,
+.callout {
+  border-radius: 1rem;
+  border: 1px solid #d6ecfa;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+blockquote {
+  border-left: 4px solid #89CFF0;
+  background: white;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  color: #5f6b7a;
+}
+
+pre code {
+  border-radius: 0.75rem;
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.column {
+  min-width: 0;
+}
+
+.hero-name {
+  font-size: 2.5rem !important;
+  line-height: 1.1;
+  font-weight: 800 !important;
+  color: #5798ca !important;
+  white-space: nowrap;
+}
+
+.welcome-title {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  opacity: 0.8;
+  color: #3a7ca5 !important;
+}
+
+.column p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.hero-adjust {
+  margin-top: -10px;
 }

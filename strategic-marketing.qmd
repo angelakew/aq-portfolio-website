@@ -1,60 +1,49 @@
 ---
-title: "Strategic Marketing"
+title: "Technical Projects"
 ---
 
 Below are selected projects that showcase my work in strategic marketing, campaign development, and brand management. These examples highlight how I apply leadership, data-informed decision making, and creative direction to drive marketing success.
 
-## [Project Title 1: Strategic Campaign Planning]
+## TRI Google Ads Optimization & Campaign Strategy Grad Capstone Project (Fall 2025 - Present)
 
-In this project, I led the development of a comprehensive marketing campaign for **[product, service, or initiative]**. From audience segmentation to messaging strategy, I managed the full lifecycle of the campaign, aligning it with business objectives and measurable KPIs.
+For my client project with the Trauma Resource Institute (TRI), I am leading the development and optimization of Google Ads campaigns to improve lead generation and maximize the impact of the Google Ads grant.
+
+This work involves auditing historical campaign performance, restructuring campaigns based on user intent, and aligning keywords, ad copy, and landing pages to drive higher-quality conversions.
 
 **Skills Demonstrated:**
 
-- **Marketing Strategy:** Defined objectives and tactics for maximum impact.
-- **Team Coordination:** Oversaw collaboration across creative, data, and channel teams.
-- **Performance Tracking:** Implemented real-time metrics and post-campaign analysis.
-- **Brand Positioning:** Ensured consistency across all touchpoints.
+- **Search Campaign Strategy:** Designed intent-based campaign structure (brand vs. non-brand, segmented by program offerings like CRM and TRM).
+
+- **Keyword & Match Type Optimization:** Evaluated performance at the keyword–match level to improve relevance, CTR, and conversion rate.
+
+- **Conversion-Focused Thinking:** Focused on optimizing for meaningful actions (training sign-ups, donations, and inquiries), not just traffic.
+
+- **Data Analysis & Reporting:** Analyzed search term data, user behavior, and campaign metrics to guide weekly optimization decisions.
+
+- **Cross-Channel Alignment:** Ensured consistency between ad messaging and landing page experience to improve conversion performance.
 
 ---
 
-## [Project Title 2: Brand Audit & Positioning]
+## IBM6510 Data Analysis Project: Exploratory Data & Insights (Fall 2024)
 
-This initiative involved conducting a full brand audit for **[organization or brand]**, evaluating its current market perception, competitive landscape, and customer engagement. I synthesized insights into a refreshed brand strategy and visual identity recommendations.
+As part of my first semester in graduate school, I led the sourcing and development of a dataset-driven analysis project using R and Quarto. I independently identified and curated a real-world animal shelter dataset, then collaborated with my team to clean, analyze, and interpret the data to uncover meaningful insights.
+
+This project focused on understanding the factors that influence animal adoption outcomes. Through data preparation, feature engineering, and statistical analysis, I examined how variables such as breed type, intake condition, age, and intake source impact the likelihood of adoption.
+
+The analysis included exploratory data analysis, correlation analysis, and logistic regression modeling. During modeling, I identified multicollinearity issues across predictors, which informed how results were interpreted and highlighted limitations in statistical significance despite meaningful variable relationships.
 
 **Skills Demonstrated:**
 
-- **Brand Analysis:** Audited messaging, tone, and visual identity.
-- **Competitive Benchmarking:** Evaluated brand positioning within the market.
-- **Strategic Communication:** Developed new value propositions and storytelling elements.
-- **Stakeholder Presentation:** Delivered recommendations to senior leadership.
+- **Data Sourcing & Preparation:** Identified and evaluated an external dataset, then cleaned and structured it using R (`tidyverse`, `janitor`, `rio`).
+- **Feature Engineering:** Created binary indicators for breed categories, intake conditions, and adoption outcomes to support modeling.
+- **Exploratory Data Analysis (EDA):** Analyzed trends in adoption rates across intake type, age, and breed classifications.
+- **Statistical Modeling:** Built logistic regression models to evaluate factors influencing adoption likelihood.
+- **Analytical Thinking:** Diagnosed multicollinearity and interpreted model limitations in a real-world dataset.
+- **Data Visualization:** Used correlation matrices and plots to communicate relationships between key variables.
+- **Reproducible Reporting:** Developed a Quarto-based report integrating code, outputs, and narrative insights.
 
 ---
 
-## [Project Title 3: Product Launch Go-to-Market Plan]
+### Interactive Report
 
-For the release of **[new product/service]**, I created a go-to-market (GTM) strategy from scratch. This included customer journey mapping, channel mix planning, and launch timeline coordination.
-
-**Skills Demonstrated:**
-
-- **Go-to-Market Strategy:** Developed a clear launch roadmap aligned with buyer needs.
-- **Integrated Marketing:** Orchestrated email, paid ads, social, and on-site promotions.
-- **Budget Management:** Allocated resources efficiently across tactics.
-- **Launch Optimization:** Tracked performance and refined tactics in real time.
-
-Below is an embedded demonstration of the interactive report:
-
-
-<iframe src="data/TRI SEO Comparison.html" width="100%" height="600px" style="border: none;"></iframe>
-
----
-
-## [Project Title 4: Client Consulting & Campaign Optimization]
-
-I collaborated with a client to assess and optimize their existing marketing efforts. Through audits, persona development, and campaign refinement, I helped improve ROI and audience engagement.
-
-**Skills Demonstrated:**
-
-- **Client Consulting:** Provided clear insights and strategic guidance.
-- **Persona Development:** Built target personas to guide messaging.
-- **Campaign Optimization:** Identified and addressed areas of underperformance.
-- **Data-Driven Adjustments:** Leveraged analytics to refine tactics.
+<iframe src="https://angelakew.github.io/dataset-project/" width="100%" height="600px" style="border: none;"></iframe>

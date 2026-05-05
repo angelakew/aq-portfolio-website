@@ -1,27 +1,50 @@
 ---
-title: "Hi, I'm [Your Name Here]"
+title: "Welcome to my Portfolio"
 ---
 
-
 ::: {.columns}
+
 ::: {.column width="30%"}
-![](https://placehold.co/530x530?text=images/headshot.jpg){width=100% style="border-radius: 50%;"}
+
+![](images/headshot.png){.profile-img .hero-adjust width=260px}
+
 :::
-::: {.column width="70%" style="padding-left: 3rem;"}
-I'm a [your profession or area of focus]. I specialize in transforming complex information into clear, engaging, and actionable insights.
+
+::: {.column width="70%" style="padding-left: 2rem;"}
+
+# Hi, I’m Angela Qian {.hero-name}
+
 :::
+
+I’m a **Digital Marketing Analytics graduate student** pursuing opportunities at the intersection of **data, technology, and insurance**. With a foundation in client relations, I specialize in transforming complex data into clear, actionable insights that support strategic decision-making and improve customer outcomes.
+
 :::
 
 ## About Me
 
-I hold a <span class="highlight">[Your Degree or Current Program]</span> from [Your Institution].
+I’m currently pursuing a <span class="highlight">Master of Science in Digital Marketing (Marketing Analytics)</span> at Cal Poly Pomona, and hold a <span class="highlight">Bachelor of Arts in Communications</span> from UC San Diego. I have a background in client relations within the insurance industry, where I supported large group accounts and developed experience in data analysis, reporting, and strategic decision-making.
 
+## What I Do
 
+I focus on answering questions like:
 
-## Let's Connect
+- How can data improve client strategy and decision-making in employee benefits?
+- How can we better analyze plan performance, costs, and trends across large group accounts?
+- How can reporting be streamlined to deliver clearer insights for clients and stakeholders?
+- How can technology and analytics tools be used to modernize traditionally manual processes?
+- How can we turn complex benefits data into clear, actionable insights?
 
-You can [email me](mailto:you@example.com) or connect on [LinkedIn](https://www.linkedin.com/in/your-profile).
+## Tools & Skills
 
----
+- Google Analytics 4 (GA4)
+- Google Ads
+- BigQuery and SQL
+- R and Quarto
+- Data visualization
+- Marketing analytics
+- Client reporting and stakeholder communication
 
-*Welcome to my portfolio.*
+## Let’s Connect
+
+Email: [angeluhqian@gmail.com](mailto:angeluhqian@gmail.com)  
+LinkedIn: [linkedin.com/in/qianangela1](https://www.linkedin.com/in/qianangela1/)

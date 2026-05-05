@@ -2,23 +2,20 @@ project:
   type: website
 
 website:
-  title: "YOUR NAME"
   navbar:
     left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Marketing Analytics"
-        href: marketing-analytics.qmd
-      - text: "Strategic Marketing"
-        href: strategic-marketing.qmd
-      - text: "Résumé"
-        href: resume.qmd
-
+      - href: index.qmd
+        text: Home
+      - href: strategic-marketing.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
+      - href: contact-us/contact-us.qmd
+        text: Contact
 
 format:
   html:
-    theme: [flatly, theme.scss]
+    theme:
+      - cosmo
+      - theme.scss
     toc: true
-    include-in-header: includes/gtm-head.html      # Injects GTM script into <head>
-    include-before-body: includes/gtm-body.html    # Injects GTM noscript immediately after <body> opens
-

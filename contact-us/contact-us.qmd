@@ -1,6 +1,20 @@
 ---
-title: "Contact Us"
+title: "Contact"
+---
+
+## Let’s Connect
+
+Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.
+
+- Email: [angeluhqian@gmail.com](mailto:angeluhqian@gmail.com)
+- LinkedIn: [linkedin.com/in/qianangela1](https://www.linkedin.com/in/qianangela1/)
 
 ---
 
-Template
+I’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.
+
+::: {.callout-tip}
+### Quick Note
+
+The best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours.
+:::

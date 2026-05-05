@@ -1,89 +1,62 @@
 ---
-name: First
-surname: Last
-position: "Your Role or Career Focus"
-phone: +1 (XXX) XXX-XXXX
-www: yourwebsite.com
-email: "you@example.com"
-github: your-github
-linkedin: your-linkedin
-date: "`r format(Sys.time(), '%B %Y')`"
-output: 
-  vitae::latexcv:
-    theme: classic
-header-includes:
-   - \usepackage{enumitem}
-   - \setlist[itemize]{nosep, left=0pt}
-   - \setlist[enumerate]{nosep, left=0pt}
+title: "Resume"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+## Angela Qian
 
-if (!requireNamespace(c("tinytex","vitae","tibble"), quietly = TRUE)) {
-  install.packages(c("tinytex","vitae","tibble"))
-}
+Los Angeles, CA  
+[LinkedIn](https://www.linkedin.com/in/qianangela1/)  
+Email: [angeluhqian@gmail.com](mailto:angeluhqian@gmail.com)
 
-if (Sys.which("pdflatex") == "" && !tinytex::is_tinytex()) {                    
-  message("► TinyTeX not found – installing")
-  tinytex::install_tinytex()        
-} else {
-  message("✓ LaTeX present – no installation needed.")
-}
+## Education
 
-library(vitae)
-library(tibble)
-```
+**California State Polytechnic University, Pomona**  
+M.S. Digital Marketing, Concentration in Marketing Analytics  
+August 2024 – May 2026
 
-# Professional Summary
+**University of California, San Diego**  
+B.A. Communications, Concentration in Marketing and Public Relations  
+September 2016 – March 2019
 
-Motivated and detail-oriented marketing and analytics professional with a strong background in data interpretation, campaign strategy, and digital tools. Skilled in turning insights into action and communicating value across business teams.
+## Experience
 
-# Technical Skills
+### EPIC Insurance Brokers & Consultants  
+**Client Coordinator, Employee Benefits**  
+January 2024 – August 2024
 
-- **Programming Languages:** R, Python, SQL, etc.  
-- **Web Technologies:** HTML, CSS/SCSS, Quarto, CMS, Google Analytics, etc.
+- Supported Client Executives with compliance, marketing, and reporting deliverables.
+- Managed a book of approximately 15 large group accounts with 500+ employees.
+- Assisted with client and employee issue resolution, including claims and billing discrepancies.
+- Created financial reports, benchmark reports, team metrics, and commission activity reports.
+- Used BenefitPoint and other BenAdmin platforms to manage policy and account details.
 
-# Education
+### Suvaun, Acrisure LLC Agency Partner  
+**Marketing Account Coordinator**  
+March 2020 – January 2024
 
-```{r}
-tribble(
-  ~ Degree, ~ Year, ~ College, ~ Institution,
-  "Master of [Your Field]", "20XX – Expected Graduation 20XX", "[Your School or Department]", "[Your University]",
-  "Bachelor of [Your Field]", "20XX – 20XX", "[Your School or Department]", "[Your University]"
-) %>%
-  detailed_entries(Degree, Year, College, Institution)
-```
+- Led small group marketing RFP processes from data collection through implementation.
+- Audited renewal and prospect data from EASE and Employee Navigator.
+- Built customized RFPs, rate guides, and broker-facing presentations.
+- Coordinated with carrier vendors, broker partners, and outsourcing teams.
+- Supported internal and user training for onboarding broker partners.
 
-# Work Experience
+### L.A. Pinnacle Insurance Agency  
+**Benefits Assistant**  
+April 2019 – March 2020
 
-```{r}
-tribble(
-  ~ Years, ~ Company, ~ Duties, ~ Title,
+- Supported lead broker with group and individual health insurance policies.
+- Managed enrollments, terminations, premium payments, and claims support.
+- Prepared renewal charts and marketing packages using Excel and Word & Brown.
 
-  "Month YYYY – Month YYYY", "Company or Organization Name",
-  list(
-    "Summarize responsibility or achievement \\#1.",
-    "Highlight tools, technologies, or methods used.",
-    "Mention metrics, goals, or impact if possible.",
-    "Add communication or leadership responsibilities here."
-  ),
-  "Job Title",
+## Certifications
 
-  "Month YYYY – Month YYYY", "Another Company or Team",
-  list(
-    "Led a project or team focused on [insert focus].",
-    "Collaborated cross-functionally with [departments/roles].",
-    "Managed content, campaigns, or dashboards.",
-    "Contributed to strategic planning or reporting."
-  ),
-  "Job Title"
+**California Department of Insurance**  
+Accident, Health & Life Agent License #0N12658
 
-) %>%
-  detailed_entries(
-    what = Title,
-    when = Years,
-    with = Company,
-    why = Duties
-  )
-```
+## Skills
+
+GA4, BigQuery, SQL, R, Quarto, Google Ads, Marketing Analytics, Client Reporting, RFP Management, Rate Analysis, Employee Benefits, BenefitPoint, EASE, Employee Navigator, Microsoft Office, Asana, SharePoint
+
+## Languages
+
+English and Mandarin Chinese

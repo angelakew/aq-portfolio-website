@@ -1,0 +1,15 @@
+{
+  "hash": "5d036a0fef11b41373da80da3452e309",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Resume\"\n---\n\n\n\n## Angela Qian\n\nLos Angeles, CA  \n[LinkedIn](https://www.linkedin.com/in/qianangela1/)  \nEmail: [angeluhqian@gmail.com](mailto:angeluhqian@gmail.com)\n\n## Education\n\n**California State Polytechnic University, Pomona**  \nM.S. Digital Marketing, Concentration in Marketing Analytics  \nAugust 2024 – May 2026\n\n**University of California, San Diego**  \nB.A. Communications, Concentration in Marketing and Public Relations  \nSeptember 2016 – March 2019\n\n## Experience\n\n### EPIC Insurance Brokers & Consultants  \n**Client Coordinator, Employee Benefits**  \nJanuary 2024 – August 2024\n\n- Supported Client Executives with compliance, marketing, and reporting deliverables.\n- Managed a book of approximately 15 large group accounts with 500+ employees.\n- Assisted with client and employee issue resolution, including claims and billing discrepancies.\n- Created financial reports, benchmark reports, team metrics, and commission activity reports.\n- Used BenefitPoint and other BenAdmin platforms to manage policy and account details.\n\n### Suvaun, Acrisure LLC Agency Partner  \n**Marketing Account Coordinator**  \nMarch 2020 – January 2024\n\n- Led small group marketing RFP processes from data collection through implementation.\n- Audited renewal and prospect data from EASE and Employee Navigator.\n- Built customized RFPs, rate guides, and broker-facing presentations.\n- Coordinated with carrier vendors, broker partners, and outsourcing teams.\n- Supported internal and user training for onboarding broker partners.\n\n### L.A. Pinnacle Insurance Agency  \n**Benefits Assistant**  \nApril 2019 – March 2020\n\n- Supported lead broker with group and individual health insurance policies.\n- Managed enrollments, terminations, premium payments, and claims support.\n- Prepared renewal charts and marketing packages using Excel and Word & Brown.\n\n## Certifications\n\n**California Department of Insurance**  \nAccident, Health & Life Agent License #0N12658\n\n## Skills\n\nGA4, BigQuery, SQL, R, Quarto, Google Ads, Marketing Analytics, Client Reporting, RFP Management, Rate Analysis, Employee Benefits, BenefitPoint, EASE, Employee Navigator, Microsoft Office, Asana, SharePoint\n\n## Languages\n\nEnglish and Mandarin Chinese",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

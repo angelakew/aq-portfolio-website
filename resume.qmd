@@ -1,55 +1,78 @@
 ---
-title: "Résumé"
+title: "Professional Resume"
 ---
 
-```{r knit-resume, echo=FALSE, message=FALSE}
-rmarkdown::render(
-  "resume/Resume.Rmd",
-  output_format = "pdf_document",
-  output_file   = "Resume.pdf",
-  output_dir    = "resume",
-  quiet         = TRUE
-)
-```
+You can view or download a PDF version of my resume [here](resume/Resume.pdf).
 
-You can view a PDF version of my résumé [here](resume/Resume.pdf).
+## Professional Summary
 
-# Professional Summary
+Digital Marketing Analytics graduate student with a background in employee benefits, client relations, reporting, and financial analysis. Experienced in supporting large group accounts, preparing client-facing deliverables, and translating complex information into clear, actionable insights. Interested in applying data, analytics, and technology to improve strategy and reporting within the insurance and employee benefits space.
 
-Results-oriented marketing and analytics professional with a strong foundation in data analysis, digital strategy, and performance reporting. Skilled in leveraging analytics tools and programming languages to uncover insights and support decision-making across cross-functional teams.
+## Education
 
-# Technical Skills
+**California State Polytechnic University, Pomona**  
+M.S. Digital Marketing (Marketing Analytics)  
 
-- **Programming Languages:** R, Python, SQL, etc.  
-- **Web Technologies:** HTML, CSS/SCSS, JavaScript, Quarto, CMS Platforms, Analytics Tools
+- August 2024 – May 2026
 
-# Education
+**University of California, San Diego**  
+B.A. Communications (Marketing and Public Relations)
 
-| Degree                             | Year                          | College / Department                 | Institution         |
-| ---------------------------------- | ----------------------------- | ------------------------------------ | ------------------- |
-| [Your Degree]                     | [Start – Graduation Year]     | [Your College or Department]        | [Your University]   |
-| [Previous Degree or Certification] | [Start – End Year]            | [Your College or Department]        | [Your University]   |
+- September 2016 – March 2019
 
-# Work Experience
+## Experience
 
-### [Job Title], [Company or Organization]  
-*[Start Date – End Date]*
+### EPIC Insurance Brokers & Consultants  
+**Client Coordinator, Employee Benefits**  
+*January 2024 – August 2024*
 
-- [Responsibility or accomplishment #1]  
-- [Responsibility or accomplishment #2]  
-- [Responsibility or accomplishment #3]  
-- [Technical tools, collaboration, or outcomes]  
-- [Any metrics, impacts, or stakeholder involvement]
+- Served as the primary point of contact for Client Executives, directly reporting on all requested deliverables to streamline compliance processes and optimize the delivery of marketing materials to clients, ensuring consistent alignment with regulatory standards and client expectations.
+- Strategically managed a diverse portfolio of approximately 15 large group accounts, each with over 500 employees, alongside multiple smaller divisions, providing personalized support and proactive account management to maintain client satisfaction and retention.
+- Provided expert assistance in resolving complex client and employee issues, including benefit claim disputes, eligibility concerns, and policy inquiries, ensuring timely resolution and maintaining strong client relationships.
+- Cultivated and sustained successful, mutually beneficial relationships with a wide network of stakeholders, including clients, insurance carriers, and third-party administrators, fostering collaboration and clear communication.
+- Leveraged industry-leading BenAdmin platforms, including BenefitPoint, to accurately manage and maintain all policy details, commission structures, and documentation, ensuring transparency, compliance, and data integrity.
+- Designed and delivered comprehensive financial reports, renewal presentations, and client brochures, incorporating key marketing metrics, benchmarking data, and commission analysis to support informed decision-making and client retention strategies.
 
----
+### Suvaun, Acrisure LLC Agency Partner  
+**Marketing Account Coordinator**  
+*March 2020 – January 2024*
 
-### [Job Title], [Company or Organization]  
-*[Start Date – End Date]*
+- Spearheaded and led comprehensive pre-sale marketing initiatives for small accounts, driving targeted outreach strategies that effectively captured and engaged prospective clients while maximizing lead conversion.
+- Strategically managed the end-to-end Request for Proposal (RFP) marketing process, guiding broker users from initial engagement through successful implementation, ensuring a seamless and efficient experience that met client expectations.
+- Cultivated and maintained strong, strategic relationships with a diverse range of carrier vendors, serving as a trusted liaison between carriers and clients, facilitating clear communication, negotiation, and conflict resolution.
+- Collaborated cross-functionally with an international outsourcing team, providing expert guidance on leveraging advanced features within Suvaun, overseeing task execution to ensure accuracy, efficiency, and adherence to best practices.
+- Delivered comprehensive training and onboarding programs for both internal team members and external broker partners, enhancing user proficiency and fostering a strong foundation for long-term success.
 
-- [Responsibility or accomplishment #1]  
-- [Responsibility or accomplishment #2]  
-- [Team leadership, training, or development]  
-- [Projects involving marketing, data, or web technologies]  
-- [Toolset used or strategies implemented]
+### L.A. Pinnacle Insurance Agency  
+**Benefits Marketing & Admin Assistant**  
+*April 2019 – March 2020*
 
----
+- Supported administration of group and individual health insurance plans, ensuring accurate enrollments, terminations, and policy updates.
+- Managed day-to-day client and employee requests, including claims support, eligibility verification, and billing inquiries.
+- Coordinated with carriers and vendors to resolve coverage issues and maintain compliance with policy requirements.
+- Prepared renewal comparisons, rate summaries, and marketing packages to support broker recommendations.
+- Utilized Excel and Word & Brown to organize client data, track plan details, and streamline reporting processes.
+
+## Skills
+
+- **Analytics:** GA4, BigQuery, SQL, R, Quarto, Looker Studio
+- **Marketing:** Google Ads, campaign analysis, conversion tracking, reporting
+- **Employee Benefits:** RFP support, renewal analysis, rate guides, client reporting
+- **Platforms:** BenefitPoint, EASE, Employee Navigator, Microsoft Office, SharePoint, Asana
+
+## Certifications
+
+**California Department of Insurance**  
+
+Issued: 2019
+Expires: 2027
+Accident, Health & Life Agent License #0N12658
+
+**CPP Data Wrangling & Visualization**
+
+Issued Fall 2024
+Bootcamp Certification
+
+## Languages
+
+English and Mandarin Chinese
