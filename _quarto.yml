@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  google-analytics: G-6CDNWWDT04
   navbar:
     left:
       - href: index.qmd
