@@ -1,0 +1,18 @@
+---
+title: "Website Analytics (GA4)"
+format: html
+---
+
+## Overview
+
+This page summarizes key Google Analytics 4 (GA4) metrics for my portfolio website. The goal is to track user behavior, traffic sources, and engagement patterns to continuously improve user experience and content performance.
+
+---
+
+## Key Metrics
+
+- **Users:**  
+- **Sessions:**  
+- **Engagement Rate:**  
+- **Avg. Engagement Time:**  
+- **Top Traffic Source:**  
