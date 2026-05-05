@@ -11,7 +11,7 @@ website:
         text: Projects
       - href: resume.qmd
         text: Resume
-      - href: contact-us/contact-us.qmd
+      - href: contact-me/contact-me.qmd
         text: Contact
 
 format:

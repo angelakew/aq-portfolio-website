@@ -49,5 +49,8 @@ I focus on answering questions like:
 
 ## Let’s Connect
 
-Email: [angeluhqian@gmail.com](mailto:angeluhqian@gmail.com)  
-LinkedIn: [linkedin.com/in/qianangela1](https://www.linkedin.com/in/qianangela1/)
+<a href="mailto:angelaqian168n@yahoo.com">
+  <img src="images/yahoomail.png" width="30" style="vertical-align: middle;">
+</a> <a href="https://www.linkedin.com/in/qianangela1/" target="_blank">
+  <img src="images/linkedin.png" width="30" style="vertical-align: middle;">
+</a>

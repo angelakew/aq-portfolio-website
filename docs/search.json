@@ -14,13 +14,6 @@
     "text": "What You’ll Find\n\nCampaign Performance Analysis: Evaluating the effectiveness of digital marketing efforts using data.\nData Visualization: Turning raw datasets into intuitive dashboards and reports.\nMarketing Mix & Attribution: Exploring how different channels contribute to success.\nCustomer & Market Insights: Using analytics to better understand user behavior and optimize experiences."
   },
   {
-    "objectID": "contact-us/thank-you.html",
-    "href": "contact-us/thank-you.html",
-    "title": "Thank you",
-    "section": "",
-    "text": "Form submitted."
-  },
-  {
     "objectID": "strategic-marketing.html",
     "href": "strategic-marketing.html",
     "title": "Technical Projects",
@@ -40,6 +33,27 @@
     "title": "Technical Projects",
     "section": "IBM6510 Data Analysis Project: Exploratory Data & Insights (Fall 2024)",
     "text": "IBM6510 Data Analysis Project: Exploratory Data & Insights (Fall 2024)\nAs part of my first semester in graduate school, I led the sourcing and development of a dataset-driven analysis project using R and Quarto. I independently identified and curated a real-world animal shelter dataset, then collaborated with my team to clean, analyze, and interpret the data to uncover meaningful insights.\nThis project focused on understanding the factors that influence animal adoption outcomes. Through data preparation, feature engineering, and statistical analysis, I examined how variables such as breed type, intake condition, age, and intake source impact the likelihood of adoption.\nThe analysis included exploratory data analysis, correlation analysis, and logistic regression modeling. During modeling, I identified multicollinearity issues across predictors, which informed how results were interpreted and highlighted limitations in statistical significance despite meaningful variable relationships.\nSkills Demonstrated:\n\nData Sourcing & Preparation: Identified and evaluated an external dataset, then cleaned and structured it using R (tidyverse, janitor, rio).\nFeature Engineering: Created binary indicators for breed categories, intake conditions, and adoption outcomes to support modeling.\nExploratory Data Analysis (EDA): Analyzed trends in adoption rates across intake type, age, and breed classifications.\nStatistical Modeling: Built logistic regression models to evaluate factors influencing adoption likelihood.\nAnalytical Thinking: Diagnosed multicollinearity and interpreted model limitations in a real-world dataset.\nData Visualization: Used correlation matrices and plots to communicate relationships between key variables.\nReproducible Reporting: Developed a Quarto-based report integrating code, outputs, and narrative insights.\n\n\n\nInteractive Report"
+  },
+  {
+    "objectID": "contact-me/thank-you.html",
+    "href": "contact-me/thank-you.html",
+    "title": "Thank you",
+    "section": "",
+    "text": "Form submitted."
+  },
+  {
+    "objectID": "contact-me/contact-me.html",
+    "href": "contact-me/contact-me.html",
+    "title": "Contact Me",
+    "section": "",
+    "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n   Email\n   LinkedIn\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
+  },
+  {
+    "objectID": "contact-me/contact-me.html#lets-connect",
+    "href": "contact-me/contact-me.html#lets-connect",
+    "title": "Contact Me",
+    "section": "",
+    "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n   Email\n   LinkedIn\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
   },
   {
     "objectID": "resume.html",
@@ -123,20 +137,6 @@
     "href": "index.html#lets-connect",
     "title": "Welcome to my Portfolio",
     "section": "Let’s Connect",
-    "text": "Let’s Connect\nEmail: angeluhqian@gmail.com\nLinkedIn: linkedin.com/in/qianangela1"
-  },
-  {
-    "objectID": "contact-us/contact-us.html",
-    "href": "contact-us/contact-us.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n\nEmail: angeluhqian@gmail.com\nLinkedIn: linkedin.com/in/qianangela1\n\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
-  },
-  {
-    "objectID": "contact-us/contact-us.html#lets-connect",
-    "href": "contact-us/contact-us.html#lets-connect",
-    "title": "Contact",
-    "section": "",
-    "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n\nEmail: angeluhqian@gmail.com\nLinkedIn: linkedin.com/in/qianangela1\n\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
+    "text": "Let’s Connect"
   }
 ]

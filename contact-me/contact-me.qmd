@@ -1,13 +1,18 @@
 ---
-title: "Contact"
+title: "Contact Me"
 ---
 
 ## Let’s Connect
 
 Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.
 
-- Email: [angeluhqian@gmail.com](mailto:angeluhqian@gmail.com)
-- LinkedIn: [linkedin.com/in/qianangela1](https://www.linkedin.com/in/qianangela1/)
+<a href="mailto:angelaqian168n@yahoo.com">
+  <img src="../images/yahoomail.png" width="25" style="vertical-align: middle;">
+</a> <strong>Email</strong>
+
+<a href="https://www.linkedin.com/in/qianangela1/" target="_blank">
+  <img src="../images/linkedin.png" width="25" style="vertical-align: middle;">
+</a> <strong>LinkedIn</strong>
 
 ---
 
