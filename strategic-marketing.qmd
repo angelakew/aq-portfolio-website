@@ -12,8 +12,6 @@ For my client project with the Trauma Resource Institute (TRI), I am leading the
 
 This work involves auditing historical campaign performance, restructuring campaigns based on user intent, and aligning keywords, ad copy, and landing pages to drive higher-quality conversions.
 
-### Interactive Report
-
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
@@ -33,8 +31,6 @@ This project focused on understanding the factors that influence animal adoption
 
 The analysis included exploratory data analysis, correlation analysis, and logistic regression modeling. During modeling, I identified multicollinearity issues across predictors, which informed how results were interpreted.
 
-### Interactive Report
-
 <iframe src="https://angelakew.github.io/dataset-project/" width="100%" height="600" style="border: none;"></iframe>
 ---
 
@@ -45,8 +41,6 @@ In this project, I analyzed how Beyond Meat can shift consumer behavior and incr
 I focused specifically on evaluating digital marketing practices and the competitive landscape, identifying how Beyond Meat can compete against both traditional meat products and other plant-based brands through pricing, messaging, and channel strategy.
 
 Building on consumer behavior frameworks, I explored how marketing tactics such as search ads, retail media, and social content can influence perception, reduce adoption barriers, and drive repeat purchase behavior.
-
-### Interactive Report
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; margin-top: 1.5em; margin-bottom: 1em;">
   <iframe 
@@ -74,8 +68,6 @@ The analysis integrates multiple data sources, including historical ERP sales da
 Key insights showed that while regression models provide interpretability, machine learning approaches—particularly SVR and ANN—achieve higher forecast accuracy by capturing nonlinear patterns and complex relationships in the data.  
 ---
 
-### Interactive Report
-
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
@@ -91,8 +83,6 @@ Key insights showed that while regression models provide interpretability, machi
 This project presents an integrated marketing campaign strategy for Dave’s Hot Chicken, focused on expanding brand reach while maintaining its authentic, high-engagement social media presence.
 
 The campaign combines organic social media growth, paid advertising, and brand experience strategies to strengthen customer engagement and drive long-term brand loyalty.
-
-### Interactive Report
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRwNem4AwBgANXj61wIBXBDnXhhs2vvstVumIYtbfz3mcWVcxHXd_srTgXXZUo-6w/pub?start=true&loop=true&delayms=5000" width="100%" height="600" style="border: none;"></iframe>
 ---
