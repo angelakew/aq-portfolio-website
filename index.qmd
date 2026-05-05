@@ -40,6 +40,9 @@ I focus on answering questions like:
 - Google Ads
 - BigQuery and SQL
 - R and Quarto
+- Tableau
+- Hubspot
+- SPSS
 - Data visualization
 - Marketing analytics
 - Client reporting and stakeholder communication
