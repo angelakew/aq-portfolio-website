@@ -14,25 +14,39 @@
     "text": "What You’ll Find\n\nTRI Google Ad Grants Dashboard\nThis dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using the latest campaign exports. It focuses on search volume, match-type distribution, and top search themes to evaluate traffic quality and identify opportunities for optimization.\n\n\nView Interactive Dashboard"
   },
   {
-    "objectID": "GA4 Metrics/ga4-metrics.html",
-    "href": "GA4 Metrics/ga4-metrics.html",
-    "title": "Website Analytics (GA4)",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to my Portfolio",
     "section": "",
-    "text": "This page summarizes key Google Analytics 4 (GA4) metrics for my portfolio website. The goal is to track user behavior, traffic sources, and engagement patterns to continuously improve user experience and content performance."
+    "text": "I’m a Digital Marketing Analytics graduate student pursuing opportunities at the intersection of data, technology, and insurance. With a foundation in client relations, I specialize in transforming complex data into clear, actionable insights that support strategic decision-making and improve customer outcomes."
   },
   {
-    "objectID": "GA4 Metrics/ga4-metrics.html#overview",
-    "href": "GA4 Metrics/ga4-metrics.html#overview",
-    "title": "Website Analytics (GA4)",
-    "section": "",
-    "text": "This page summarizes key Google Analytics 4 (GA4) metrics for my portfolio website. The goal is to track user behavior, traffic sources, and engagement patterns to continuously improve user experience and content performance."
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Welcome to my Portfolio",
+    "section": "About Me",
+    "text": "About Me\nI’m currently pursuing a Master of Science in Digital Marketing (Marketing Analytics) at Cal Poly Pomona, and hold a Bachelor of Arts in Communications from UC San Diego. I have a background in client relations within the insurance industry, where I supported large group accounts and developed experience in data analysis, reporting, and strategic decision-making."
   },
   {
-    "objectID": "GA4 Metrics/ga4-metrics.html#key-metrics",
-    "href": "GA4 Metrics/ga4-metrics.html#key-metrics",
-    "title": "Website Analytics (GA4)",
-    "section": "Key Metrics",
-    "text": "Key Metrics\n\nUsers:\n\nSessions:\n\nEngagement Rate:\n\nAvg. Engagement Time:\n\nTop Traffic Source:"
+    "objectID": "index.html#what-i-do",
+    "href": "index.html#what-i-do",
+    "title": "Welcome to my Portfolio",
+    "section": "What I Do",
+    "text": "What I Do\nI focus on answering questions like:\n\nHow can data improve client strategy and decision-making in employee benefits?\nHow can we better analyze plan performance, costs, and trends across large group accounts?\nHow can reporting be streamlined to deliver clearer insights for clients and stakeholders?\nHow can technology and analytics tools be used to modernize traditionally manual processes?\nHow can we turn complex benefits data into clear, actionable insights?"
+  },
+  {
+    "objectID": "index.html#tools-skills",
+    "href": "index.html#tools-skills",
+    "title": "Welcome to my Portfolio",
+    "section": "Tools & Skills",
+    "text": "Tools & Skills\n\nGoogle Analytics 4 (GA4)\nGoogle Ads\nBigQuery and SQL\nR and Quarto\nTableau\nHubspot\nSPSS\nData visualization\nMarketing analytics\nClient reporting and stakeholder communication"
+  },
+  {
+    "objectID": "index.html#lets-connect",
+    "href": "index.html#lets-connect",
+    "title": "Welcome to my Portfolio",
+    "section": "Let’s Connect",
+    "text": "Let’s Connect"
   },
   {
     "objectID": "resume.html",
@@ -84,22 +98,22 @@
     "text": "Languages\nEnglish and Mandarin Chinese"
   },
   {
-    "objectID": "contact-me/contact-me.html",
-    "href": "contact-me/contact-me.html",
+    "objectID": "contact-me.html",
+    "href": "contact-me.html",
     "title": "Contact Me",
     "section": "",
     "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n   Email\n   LinkedIn\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
   },
   {
-    "objectID": "contact-me/contact-me.html#lets-connect",
-    "href": "contact-me/contact-me.html#lets-connect",
+    "objectID": "contact-me.html#lets-connect",
+    "href": "contact-me.html#lets-connect",
     "title": "Contact Me",
     "section": "",
     "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n   Email\n   LinkedIn\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
   },
   {
-    "objectID": "contact-me/thank-you.html",
-    "href": "contact-me/thank-you.html",
+    "objectID": "thank-you.html",
+    "href": "thank-you.html",
     "title": "Thank you",
     "section": "",
     "text": "Form submitted."
@@ -147,38 +161,24 @@
     "text": "Dave’s Hot Chicken Marketing Campaign (Fall 2024)\nThis project presents an integrated marketing campaign strategy for Dave’s Hot Chicken, focused on expanding brand reach while maintaining its authentic, high-engagement social media presence.\nThe campaign combines organic social media growth, paid advertising, and brand experience strategies to strengthen customer engagement and drive long-term brand loyalty."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to my Portfolio",
+    "objectID": "ga4-metrics.html",
+    "href": "ga4-metrics.html",
+    "title": "Website Analytics (GA4)",
     "section": "",
-    "text": "I’m a Digital Marketing Analytics graduate student pursuing opportunities at the intersection of data, technology, and insurance. With a foundation in client relations, I specialize in transforming complex data into clear, actionable insights that support strategic decision-making and improve customer outcomes."
+    "text": "This page summarizes key Google Analytics 4 (GA4) metrics for my portfolio website. The goal is to track user behavior, traffic sources, and engagement patterns to continuously improve user experience and content performance."
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Welcome to my Portfolio",
-    "section": "About Me",
-    "text": "About Me\nI’m currently pursuing a Master of Science in Digital Marketing (Marketing Analytics) at Cal Poly Pomona, and hold a Bachelor of Arts in Communications from UC San Diego. I have a background in client relations within the insurance industry, where I supported large group accounts and developed experience in data analysis, reporting, and strategic decision-making."
+    "objectID": "ga4-metrics.html#overview",
+    "href": "ga4-metrics.html#overview",
+    "title": "Website Analytics (GA4)",
+    "section": "",
+    "text": "This page summarizes key Google Analytics 4 (GA4) metrics for my portfolio website. The goal is to track user behavior, traffic sources, and engagement patterns to continuously improve user experience and content performance."
   },
   {
-    "objectID": "index.html#what-i-do",
-    "href": "index.html#what-i-do",
-    "title": "Welcome to my Portfolio",
-    "section": "What I Do",
-    "text": "What I Do\nI focus on answering questions like:\n\nHow can data improve client strategy and decision-making in employee benefits?\nHow can we better analyze plan performance, costs, and trends across large group accounts?\nHow can reporting be streamlined to deliver clearer insights for clients and stakeholders?\nHow can technology and analytics tools be used to modernize traditionally manual processes?\nHow can we turn complex benefits data into clear, actionable insights?"
-  },
-  {
-    "objectID": "index.html#tools-skills",
-    "href": "index.html#tools-skills",
-    "title": "Welcome to my Portfolio",
-    "section": "Tools & Skills",
-    "text": "Tools & Skills\n\nGoogle Analytics 4 (GA4)\nGoogle Ads\nBigQuery and SQL\nR and Quarto\nTableau\nHubspot\nSPSS\nData visualization\nMarketing analytics\nClient reporting and stakeholder communication"
-  },
-  {
-    "objectID": "index.html#lets-connect",
-    "href": "index.html#lets-connect",
-    "title": "Welcome to my Portfolio",
-    "section": "Let’s Connect",
-    "text": "Let’s Connect"
+    "objectID": "ga4-metrics.html#key-metrics",
+    "href": "ga4-metrics.html#key-metrics",
+    "title": "Website Analytics (GA4)",
+    "section": "Key Metrics",
+    "text": "Key Metrics\n\nUsers:\n\nSessions:\n\nEngagement Rate:\n\nAvg. Engagement Time:\n\nTop Traffic Source:"
   }
 ]

@@ -14,9 +14,9 @@ website:
         text: Marketing Analytics
       - href: resume.qmd
         text: Resume
-      - href: GA4 Metrics/ga4-metrics.qmd
+      - href: ga4-metrics.qmd
         text: GA4 Metrics
-      - href: contact-me/contact-me.qmd
+      - href: contact-me.qmd
         text: Contact
 
 format:
