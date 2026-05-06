@@ -1,0 +1,266 @@
+---
+title: "TRI Google Ad Grants Dashboard (Static)"
+subtitle: "CRM + TRM search demand, match-type mix, and query themes"
+author: "Angela Qian"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-expand: true
+    embed-resources: true
+    code-fold: true
+    code-tools: true
+    dashboard:
+      orientation: rows
+      nav-buttons: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(scales)
+library(stringr)
+```
+
+```{r}
+campaign_files <- c(
+  CRM = "/Users/angelaqian/Campaign report (CRM).csv",
+  TRM = "/Users/angelaqian/Campaign report (TRM).csv"
+)
+
+terms_files <- c(
+  CRM = "/Users/angelaqian/Search terms report (CRM).csv",
+  TRM = "/Users/angelaqian/Search terms report (TRM).csv"
+)
+
+keyword_files <- c(
+  CRM = "/Users/angelaqian/Search keyword report (CRM).csv",
+  TRM = "/Users/angelaqian/Search keyword report (TRM).csv"
+)
+```
+```{r}
+read_ads_csv_skip2 <- function(path) {
+  if (!file.exists(path)) stop("File not found: ", path)
+
+  txt <- readLines(path, encoding = "UTF-16LE", warn = FALSE)
+  txt <- txt[!is.na(txt)]
+
+  tmp <- tempfile(fileext = ".csv")
+  writeLines(txt, tmp, useBytes = TRUE)
+
+  df <- readr::read_csv(
+    tmp,
+    skip = 2,
+    show_col_types = FALSE,
+    progress = FALSE,
+    guess_max = 50000
+  ) %>% clean_names()
+
+  if (ncol(df) == 1) {
+    stop(
+      "Imported as ONE column (bad delimiter/export). Re-export as CSV (comma).\n",
+      "Single column name: ", names(df)[1]
+    )
+  }
+  df
+}
+
+to_num <- function(x) {
+  x <- as.character(x)
+  x <- gsub("%", "", x)
+  x <- gsub("\\$", "", x)
+  x <- gsub(",", "", x)
+  suppressWarnings(as.numeric(x))
+}
+
+drop_totals <- function(df) {
+  nm <- names(df)
+  label_col <- intersect(c("campaign","search_term","ad_group","campaign_name","search_terms_report"), nm)
+  if (length(label_col) == 0) return(df)
+  col <- label_col[1]
+  df %>% filter(!str_detect(tolower(.data[[col]]), "^total:"))
+}
+
+pick_col <- function(df, candidates) {
+  hit <- intersect(candidates, names(df))
+  if (length(hit) == 0) return(NA_character_)
+  hit[1]
+}
+
+standardize_campaign <- function(df) {
+  col_campaign <- pick_col(df, c("campaign","campaign_name","campaign_report"))
+  col_impr     <- pick_col(df, c("impr","impressions"))
+  col_clicks   <- pick_col(df, c("clicks"))
+  col_cost     <- pick_col(df, c("cost"))
+  col_conv     <- pick_col(df, c("conversions","conv","all_conversions"))
+  col_ctr      <- pick_col(df, c("ctr"))
+  col_cpc      <- pick_col(df, c("avg_cpc","average_cpc"))
+  col_cvr      <- pick_col(df, c("conv_rate","conversion_rate"))
+  col_cpa      <- pick_col(df, c("cost_conv","cost_per_conv","cost_per_conversion"))
+
+  if (is.na(col_campaign)) stop("Could not find campaign column. Columns: ", paste(names(df), collapse=", "))
+
+  df %>%
+    drop_totals() %>%
+    mutate(
+      campaign    = as.character(.data[[col_campaign]]),
+      clicks      = if (!is.na(col_clicks)) to_num(.data[[col_clicks]]) else NA_real_,
+      cost        = if (!is.na(col_cost))   to_num(.data[[col_cost]])   else NA_real_,
+      impressions = if (!is.na(col_impr))   to_num(.data[[col_impr]])   else NA_real_,
+      conversions = if (!is.na(col_conv))   to_num(.data[[col_conv]])   else 0,
+      ctr         = if (!is.na(col_ctr))    to_num(.data[[col_ctr]])    else NA_real_,
+      avg_cpc     = if (!is.na(col_cpc))    to_num(.data[[col_cpc]])    else NA_real_,
+      conv_rate   = if (!is.na(col_cvr))    to_num(.data[[col_cvr]])    else NA_real_,
+      cost_conv   = if (!is.na(col_cpa))    to_num(.data[[col_cpa]])    else NA_real_
+    ) %>%
+    filter(!is.na(campaign), campaign != "", campaign != "--")
+}
+
+standardize_terms <- function(df) {
+  col_term     <- pick_col(df, c("search_term","search_terms","term","query","search_terms_report"))
+  col_match    <- pick_col(df, c("match_type","keyword_match_type"))
+  col_campaign <- pick_col(df, c("campaign","campaign_name"))
+  col_impr     <- pick_col(df, c("impr","impressions"))
+  col_clicks   <- pick_col(df, c("clicks"))
+  col_cost     <- pick_col(df, c("cost"))
+  col_conv     <- pick_col(df, c("conversions","conv","all_conversions"))
+  col_ctr      <- pick_col(df, c("ctr"))
+
+  if (is.na(col_term)) stop("Could not find search term column. Columns: ", paste(names(df), collapse=", "))
+
+  df %>%
+    drop_totals() %>%
+    mutate(
+      search_term = as.character(.data[[col_term]]),
+      match_type  = if (!is.na(col_match)) as.character(.data[[col_match]]) else NA_character_,
+      campaign    = if (!is.na(col_campaign)) as.character(.data[[col_campaign]]) else NA_character_,
+      clicks      = if (!is.na(col_clicks)) to_num(.data[[col_clicks]]) else NA_real_,
+      cost        = if (!is.na(col_cost))   to_num(.data[[col_cost]])   else NA_real_,
+      impressions = if (!is.na(col_impr))   to_num(.data[[col_impr]])   else NA_real_,
+      conversions = if (!is.na(col_conv))   to_num(.data[[col_conv]])   else 0,
+      ctr         = if (!is.na(col_ctr))    to_num(.data[[col_ctr]])    else NA_real_
+    ) %>%
+    filter(!is.na(search_term), search_term != "", search_term != "--")
+}
+```
+```{r}
+campaign <- imap_dfr(campaign_files, ~ read_ads_csv_skip2(.x) %>% standardize_campaign() %>% mutate(program = .y))
+terms    <- imap_dfr(terms_files,    ~ read_ads_csv_skip2(.x) %>% standardize_terms()    %>% mutate(program = .y))
+keywords <- imap_dfr(keyword_files,  ~ read_ads_csv_skip2(.x) %>% clean_names()          %>% mutate(program = .y))
+```
+
+## Overview
+
+::: card
+What this dashboard shows
+
+This dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using the latest exports in /data/. It focuses on volume, match-type mix, and top search themes (for non-brand demand + negative keyword opportunities).
+:::
+
+```{r}
+kpi <- campaign %>%
+  group_by(program) %>%
+  summarise(
+    clicks = sum(clicks, na.rm=TRUE),
+    cost = sum(cost, na.rm=TRUE),
+    avg_cpc = cost / clicks,
+    conv = sum(conversions, na.rm=TRUE),
+    .groups = "drop"
+  )
+
+knitr::kable(
+  kpi %>% mutate(cost = dollar(cost), avg_cpc = dollar(avg_cpc), clicks = comma(clicks), conv = comma(conv)),
+  align = "l"
+)
+```
+
+## Campaign Performance (CRM vs TRM)
+
+### Clicks by campaign
+
+```{r}
+p_clicks <- campaign %>%
+  group_by(program, campaign) %>%
+  summarise(clicks = sum(clicks, na.rm=TRUE), .groups="drop") %>%
+  arrange(program, clicks) %>%
+  ggplot(aes(x = clicks, y = fct_reorder(campaign, clicks))) +
+  geom_col() +
+  facet_wrap(~program, scales="free_y") +
+  scale_x_continuous(labels = comma) +
+  labs(title = "Clicks by Campaign", x = "Clicks", y = NULL)
+p_clicks
+```
+
+### Spend by campaign
+
+```{r}
+p_cost <- campaign %>%
+  group_by(program, campaign) %>%
+  summarise(cost = sum(cost, na.rm=TRUE), .groups="drop") %>%
+  arrange(program, cost) %>%
+  ggplot(aes(x = cost, y = fct_reorder(campaign, cost))) +
+  geom_col() +
+  facet_wrap(~program, scales="free_y") +
+  scale_x_continuous(labels = dollar) +
+  labs(title = "Spend by Campaign", x = "Cost ($)", y = NULL)
+p_cost
+```
+
+## Match-type mix (quality proxy)
+
+### Click share by match type (CRM vs TRM)
+
+```{r}
+match_share_prog <- terms %>%
+  filter(!is.na(match_type), match_type != "") %>%
+  group_by(program, match_type) %>%
+  summarise(clicks = sum(clicks, na.rm=TRUE), .groups="drop") %>%
+  group_by(program) %>%
+  mutate(share = clicks / sum(clicks)) %>%
+  ungroup()
+
+p_match_prog <- ggplot(match_share_prog, aes(x = share, y = fct_reorder(match_type, share))) +
+  geom_col() +
+  facet_wrap(~program) +
+  geom_text(aes(label = percent(share, accuracy = 0.1)), hjust = -0.1, size=3.5) +
+  scale_x_continuous(labels = percent, expand = expansion(mult = c(0, 0.2))) +
+  labs(title = "Match-Type Mix by Program", subtitle = "Broad vs Phrase vs Exact", x = "Share of Clicks", y = NULL)
+
+p_match_prog
+```
+
+## Search Demand Themes (top queries)
+
+### Top search terms by program
+
+```{r}
+top_terms_prog <- terms %>%
+  group_by(program, search_term) %>%
+  summarise(clicks = sum(clicks, na.rm=TRUE), .groups="drop") %>%
+  arrange(program, desc(clicks)) %>%
+  group_by(program) %>%
+  slice_head(n = 8) %>%
+  ungroup() %>%
+  mutate(search_term = str_wrap(search_term, 28))
+
+p_terms_prog <- ggplot(top_terms_prog, aes(x = clicks, y = fct_reorder(search_term, clicks))) +
+  geom_col() +
+  facet_wrap(~program, scales="free_y") +
+  geom_text(aes(label = comma(clicks)), hjust = -0.1, size=3.3) +
+  scale_x_continuous(labels = comma, expand = expansion(mult = c(0, 0.2))) +
+  labs(title = "Top Search Terms by Program", subtitle = "Good for non-brand themes + negatives", x = "Clicks", y = NULL)
+
+p_terms_prog
+```
+
+::: callout-note
+Interpretation notes
+
+-   Broad match can uncover new demand, but usually needs strong negative keywords to avoid low-intent clicks.
+-   If conversions show as 0 in export, treat this as a traffic-mix scan (not ROI). :::
+:::
