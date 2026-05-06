@@ -11,7 +11,7 @@
     "href": "marketing-analytics.html#what-youll-find",
     "title": "Marketing Analytics for CEP",
     "section": "What You’ll Find",
-    "text": "What You’ll Find\n\nTRI Google Ad Grants Dashboard\nThis dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using the latest campaign exports. It focuses on search volume, match-type distribution, and top search themes to evaluate traffic quality and identify opportunities for optimization.\n\n\nView Interactive Dashboard\n\n\n\n\n\nTRI Google Ad Grants Explorer (Shiny App)\nThis interactive Shiny app lets you explore TRI’s Google Ad Grants performance for CRM vs TRM. It supports program-level filtering and quick diagnostics for campaign volume, match-type mix (Broad/Phrase/Exact), and top search themes so we can evaluate traffic quality and prioritize optimization.\n\n\nView Interactive App\n\n\n\nLaunch app here:  https://angelakew.shinyapps.io/TRIapp/"
+    "text": "What You’ll Find\n\nTRI Google Ad Grants Dashboard\nThis dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using the latest campaign exports. It focuses on search volume, match-type distribution, and top search themes to evaluate traffic quality and identify opportunities for optimization.\n\n\nView Interactive Dashboard\n\n\n\n\n\nTRI Google Ad Grants Explorer (Shiny App)\nThis interactive Shiny app lets you explore TRI’s Google Ad Grants performance for CRM vs TRM. It supports program-level filtering and quick diagnostics for campaign volume, match-type mix (Broad/Phrase/Exact), and top search themes so we can evaluate traffic quality and prioritize optimization.\n\n\nView Interactive App\n\n\n\nLaunch app externally:  https://angelakew.shinyapps.io/TRIapp/"
   },
   {
     "objectID": "index.html",

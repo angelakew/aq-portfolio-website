@@ -34,7 +34,7 @@ This interactive Shiny app lets you explore TRI’s Google Ad Grants performance
 </iframe>
 
 <p style="margin-top: 10px;">
-  Launch app here:
+  Launch app externally:
   <a href="https://angelakew.shinyapps.io/TRIapp/" target="_blank" rel="noopener noreferrer">
     https://angelakew.shinyapps.io/TRIapp/
   </a>
