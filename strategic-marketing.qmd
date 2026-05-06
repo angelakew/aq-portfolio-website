@@ -61,11 +61,9 @@ Building on consumer behavior frameworks, I explored how marketing tactics such 
 
 This project explores demand forecasting in a construction machinery context using both traditional statistical models and advanced machine learning techniques.
 
-Based on a real-world study, I analyzed how different modeling approaches—including linear regression, nonlinear regression, artificial neural networks (ANN), and support vector regression (SVR)—perform in predicting spare parts demand.
+Based on a real-world study, I analyzed how different modeling approaches-including linear regression, nonlinear regression, artificial neural networks (ANN), and support vector regression (SVR)-perform in predicting spare parts demand.
 
 The analysis integrates multiple data sources, including historical ERP sales data, global machinery sales trends, exchange rates, and engineered variables such as a monthly impact rate to capture seasonality and demand fluctuations.
-
-Key insights showed that while regression models provide interpretability, machine learning approaches—particularly SVR and ANN—achieve higher forecast accuracy by capturing nonlinear patterns and complex relationships in the data.  
 ---
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
