@@ -20,6 +20,13 @@ This dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using
 
 ### View Interactive Dashboard
 <iframe src="https://angelakew.github.io/dashboard/" width="100%" height="600px" style="border: none;"></iframe>
+
+<p style="margin-top: 10px;">
+  View full dashboard here:
+  <a href="https://angelakew.github.io/dashboard/" target="_blank" rel="noopener noreferrer">
+  https://angelakew.github.io/dashboard/
+  </a>
+</p>
 ---
 ### TRI Google Ad Grants Explorer (Shiny App)
 
