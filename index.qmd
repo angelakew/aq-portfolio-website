@@ -12,7 +12,7 @@ title: "Welcome to my Portfolio"
 
 ::: {.column width="70%" style="padding-left: 2rem;"}
 
-# Hi, I’m Angela Qian {.hero-name}
+# Hi, I’m Angela! {.hero-name}
 
 :::
 

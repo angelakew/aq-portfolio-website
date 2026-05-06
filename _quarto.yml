@@ -7,7 +7,7 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Angela Qian
       - href: strategic-marketing.qmd
         text: Projects
       - href: marketing-analytics.qmd
