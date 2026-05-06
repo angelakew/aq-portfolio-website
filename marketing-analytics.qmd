@@ -20,3 +20,22 @@ This dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using
 
 ### View Interactive Dashboard
 <iframe src="https://angelakew.github.io/dashboard/" width="100%" height="600px" style="border: none;"></iframe>
+---
+### TRI Google Ad Grants Explorer (Shiny App)
+
+This interactive Shiny app lets you explore TRI’s Google Ad Grants performance for CRM vs TRM. It supports program-level filtering and quick diagnostics for campaign volume, match-type mix (Broad/Phrase/Exact), and top search themes so we can evaluate traffic quality and prioritize optimization.
+
+### View Interactive Dashboard
+<iframe 
+  src="https://angelakew.shinyapps.io/TRIapp/" 
+  width="100%" 
+  height="800px" 
+  style="border: none;">
+</iframe>
+
+<p style="margin-top: 10px;">
+  If the embed doesn’t load, open it here:
+  <a href="https://angelakew.shinyapps.io/TRIapp/" target="_blank" rel="noopener noreferrer">
+    https://angelakew.shinyapps.io/TRIapp/
+  </a>
+</p>
