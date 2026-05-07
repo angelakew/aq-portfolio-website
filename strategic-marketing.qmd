@@ -83,55 +83,45 @@ This project presents an integrated marketing campaign strategy for Dave’s Hot
 The campaign combines organic social media growth, paid advertising, and brand experience strategies to strengthen customer engagement and drive long-term brand loyalty.
 
 ```{=html}
-
 <div style="
-
-  position: relative;
-
-  width: 100%;
-
-  padding-bottom: 56.25%;
-
-  height: 0;
-
-  overflow: hidden;
-
-  border-radius: 12px;
-
-  margin-top: 20px;
-
+  padding: 28px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  background: #f8f9fa;
+  text-align: center;
+  margin: 20px 0;
 ">
 
-<iframe
+  <h3 style="margin-top: 0;">
+    Dave’s Hot Chicken Marketing Campaign
+  </h3>
 
-  src="https://docs.google.com/presentation/d/e/2PACX-1vRwNem4AwBgANXj61wIBXBDnXhhs2vvstVumIYtbfz3mcWVcxHXd_srTgXXZUo-6w/pubembed?start=true&loop=false&delayms=3000"
-
-  frameborder="0"
-
-  allowfullscreen="true"
-
-  mozallowfullscreen="true"
-
-  webkitallowfullscreen="true"
-
-  style="
-
-    position: absolute;
-
-    top: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    border: none;
-
+  <p style="
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
   ">
+    Google Slides may not load consistently inside embedded portfolio previews.
+    Open the full presentation externally for the best viewing experience.
+  </p>
 
-</iframe>
+  <a
+    href="https://docs.google.com/presentation/d/e/2PACX-1vRwNem4AwBgANXj61wIBXBDnXhhs2vvstVumIYtbfz3mcWVcxHXd_srTgXXZUo-6w/pub?start=true&loop=false&delayms=3000"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+      display: inline-block;
+      padding: 14px 26px;
+      background: #2c7fb8;
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 16px;
+    "
+  >
+    Open Slides
+  </a>
 
 </div>
-
 ```
