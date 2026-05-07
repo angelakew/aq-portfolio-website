@@ -14,12 +14,20 @@ By combining statistical analysis, dashboard development, and search query insig
 
 ## What You’ll Find
 
-### TRI Google Ad Grants Dashboard
+## TRI Google Ad Grants Dashboard
 
 This dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using the latest campaign exports. It focuses on search volume, match-type distribution, and top search themes to evaluate traffic quality and identify opportunities for optimization.
 
 ### View Interactive Dashboard
-<iframe src="https://angelakew.github.io/dashboard/" width="100%" height="600px" style="border: none;"></iframe>
+
+```{=html}
+<iframe 
+  src="https://angelakew.github.io/dashboard/" 
+  width="100%" 
+  height="600px" 
+  style="border: none;">
+</iframe>
+```
 
 <p style="margin-top: 10px;">
   View full dashboard here:
@@ -27,22 +35,51 @@ This dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using
   https://angelakew.github.io/dashboard/
   </a>
 </p>
----
-### TRI Google Ad Grants Explorer (Shiny App)
 
-This interactive Shiny app lets you explore TRI’s Google Ad Grants performance for CRM vs TRM. It supports program-level filtering and quick diagnostics for campaign volume, match-type mix (Broad/Phrase/Exact), and top search themes so we can evaluate traffic quality and prioritize optimization.
+---
+
+## TRI Google Ad Grants Explorer (Shiny App)
+
+This interactive Shiny app lets users explore TRI’s Google Ad Grants performance for CRM vs TRM campaigns. The application supports program-level filtering and diagnostics for campaign volume, match-type distribution, and search-term quality.
 
 ### View Interactive App
+
+```{=html}
 <iframe 
   src="https://angelakew.shinyapps.io/TRIapp/" 
   width="100%" 
   height="800px" 
   style="border: none;">
 </iframe>
+```
 
 <p style="margin-top: 10px;">
   Launch app externally:
   <a href="https://angelakew.shinyapps.io/TRIapp/" target="_blank" rel="noopener noreferrer">
     https://angelakew.shinyapps.io/TRIapp/
+  </a>
+</p>
+
+---
+
+## TRI RevealJS Client Presentation
+
+This RevealJS presentation summarizes the final TRI client package, including campaign analysis, behavioral analytics, attribution findings, and optimization recommendations developed throughout the CEP project.
+
+### View RevealJS Presentation
+
+```{=html}
+<iframe 
+  src="https://angelakew.github.io/TRI-revealjs/#/title-slide" 
+  width="100%" 
+  height="800px" 
+  style="border: none;">
+</iframe>
+```
+
+<p style="margin-top: 10px;">
+  Launch presentation externally:
+  <a href="https://angelakew.github.io/TRI-revealjs/#/title-slide" target="_blank" rel="noopener noreferrer">
+    https://angelakew.github.io/TRI-revealjs/#/title-slide
   </a>
 </p>
