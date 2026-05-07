@@ -64,10 +64,6 @@ This interactive Shiny app lets users explore TRI’s Google Ad Grants performan
 
 ## TRI RevealJS Client Presentation
 
-This RevealJS presentation summarizes the final TRI client package, including campaign analysis, behavioral analytics, attribution findings, and optimization recommendations developed throughout the CEP project.
-
-### View RevealJS Presentation
-
 ```{=html}
 <iframe 
   src="https://angelakew.github.io/TRI-revealjs/#/title-slide" 
