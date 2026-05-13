@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "marketing-analytics.html",
+    "href": "marketing-analytics.html",
+    "title": "Marketing Analytics for CEP",
+    "section": "",
+    "text": "Below are selected projects from my work with the Trauma Resource Institute (TRI), where I leveraged marketing analytics to evaluate and optimize Google Ad Grants performance. These projects demonstrate my ability to analyze search behavior, assess campaign structure, and translate performance data into actionable recommendations.\nBy combining statistical analysis, dashboard development, and search query insights, I focused on improving traffic quality, identifying non-brand demand opportunities, and supporting more effective campaign and landing page alignment."
+  },
+  {
+    "objectID": "marketing-analytics.html#what-youll-find",
+    "href": "marketing-analytics.html#what-youll-find",
+    "title": "Marketing Analytics for CEP",
+    "section": "What You’ll Find",
+    "text": "What You’ll Find"
+  },
+  {
+    "objectID": "marketing-analytics.html#tri-google-ad-grants-dashboard",
+    "href": "marketing-analytics.html#tri-google-ad-grants-dashboard",
+    "title": "Marketing Analytics for CEP",
+    "section": "TRI Google Ad Grants Dashboard",
+    "text": "TRI Google Ad Grants Dashboard\nThis dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using the latest campaign exports. It focuses on search volume, match-type distribution, and top search themes to evaluate traffic quality and identify opportunities for optimization.\n\nView Interactive Dashboard\n\n\n\nView full dashboard here:  https://angelakew.github.io/dashboard/"
+  },
+  {
+    "objectID": "marketing-analytics.html#tri-google-ad-grants-explorer-shiny-app",
+    "href": "marketing-analytics.html#tri-google-ad-grants-explorer-shiny-app",
+    "title": "Marketing Analytics for CEP",
+    "section": "TRI Google Ad Grants Explorer (Shiny App)",
+    "text": "TRI Google Ad Grants Explorer (Shiny App)\nThis interactive Shiny app lets users explore TRI’s Google Ad Grants performance for CRM vs TRM campaigns. The application supports program-level filtering and diagnostics for campaign volume, match-type distribution, and search-term quality.\n\nView Interactive App\n\n\n\nLaunch app externally:  https://angelakew.shinyapps.io/TRIapp/"
+  },
+  {
+    "objectID": "marketing-analytics.html#tri-revealjs-client-presentation",
+    "href": "marketing-analytics.html#tri-revealjs-client-presentation",
+    "title": "Marketing Analytics for CEP",
+    "section": "TRI RevealJS Client Presentation",
+    "text": "TRI RevealJS Client Presentation\n\n\n\nLaunch presentation externally:  https://angelakew.github.io/TRI-revealjs/#/title-slide"
+  },
+  {
+    "objectID": "TRI-adgrants_dashboard.html",
+    "href": "TRI-adgrants_dashboard.html",
+    "title": "TRI Google Ad Grants Dashboard (Static)",
+    "section": "",
+    "text": "Code\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(scales)\nlibrary(stringr)\nCode\ncampaign_files &lt;- c(\n  CRM = \"/Users/angelaqian/Campaign report (CRM).csv\",\n  TRM = \"/Users/angelaqian/Campaign report (TRM).csv\"\n)\n\nterms_files &lt;- c(\n  CRM = \"/Users/angelaqian/Search terms report (CRM).csv\",\n  TRM = \"/Users/angelaqian/Search terms report (TRM).csv\"\n)\n\nkeyword_files &lt;- c(\n  CRM = \"/Users/angelaqian/Search keyword report (CRM).csv\",\n  TRM = \"/Users/angelaqian/Search keyword report (TRM).csv\"\n)\nCode\nread_ads_csv_skip2 &lt;- function(path) {\n  if (!file.exists(path)) stop(\"File not found: \", path)\n\n  txt &lt;- readLines(path, encoding = \"UTF-16LE\", warn = FALSE)\n  txt &lt;- txt[!is.na(txt)]\n\n  tmp &lt;- tempfile(fileext = \".csv\")\n  writeLines(txt, tmp, useBytes = TRUE)\n\n  df &lt;- readr::read_csv(\n    tmp,\n    skip = 2,\n    show_col_types = FALSE,\n    progress = FALSE,\n    guess_max = 50000\n  ) %&gt;% clean_names()\n\n  if (ncol(df) == 1) {\n    stop(\n      \"Imported as ONE column (bad delimiter/export). Re-export as CSV (comma).\\n\",\n      \"Single column name: \", names(df)[1]\n    )\n  }\n  df\n}\n\nto_num &lt;- function(x) {\n  x &lt;- as.character(x)\n  x &lt;- gsub(\"%\", \"\", x)\n  x &lt;- gsub(\"\\\\$\", \"\", x)\n  x &lt;- gsub(\",\", \"\", x)\n  suppressWarnings(as.numeric(x))\n}\n\ndrop_totals &lt;- function(df) {\n  nm &lt;- names(df)\n  label_col &lt;- intersect(c(\"campaign\",\"search_term\",\"ad_group\",\"campaign_name\",\"search_terms_report\"), nm)\n  if (length(label_col) == 0) return(df)\n  col &lt;- label_col[1]\n  df %&gt;% filter(!str_detect(tolower(.data[[col]]), \"^total:\"))\n}\n\npick_col &lt;- function(df, candidates) {\n  hit &lt;- intersect(candidates, names(df))\n  if (length(hit) == 0) return(NA_character_)\n  hit[1]\n}\n\nstandardize_campaign &lt;- function(df) {\n  col_campaign &lt;- pick_col(df, c(\"campaign\",\"campaign_name\",\"campaign_report\"))\n  col_impr     &lt;- pick_col(df, c(\"impr\",\"impressions\"))\n  col_clicks   &lt;- pick_col(df, c(\"clicks\"))\n  col_cost     &lt;- pick_col(df, c(\"cost\"))\n  col_conv     &lt;- pick_col(df, c(\"conversions\",\"conv\",\"all_conversions\"))\n  col_ctr      &lt;- pick_col(df, c(\"ctr\"))\n  col_cpc      &lt;- pick_col(df, c(\"avg_cpc\",\"average_cpc\"))\n  col_cvr      &lt;- pick_col(df, c(\"conv_rate\",\"conversion_rate\"))\n  col_cpa      &lt;- pick_col(df, c(\"cost_conv\",\"cost_per_conv\",\"cost_per_conversion\"))\n\n  if (is.na(col_campaign)) stop(\"Could not find campaign column. Columns: \", paste(names(df), collapse=\", \"))\n\n  df %&gt;%\n    drop_totals() %&gt;%\n    mutate(\n      campaign    = as.character(.data[[col_campaign]]),\n      clicks      = if (!is.na(col_clicks)) to_num(.data[[col_clicks]]) else NA_real_,\n      cost        = if (!is.na(col_cost))   to_num(.data[[col_cost]])   else NA_real_,\n      impressions = if (!is.na(col_impr))   to_num(.data[[col_impr]])   else NA_real_,\n      conversions = if (!is.na(col_conv))   to_num(.data[[col_conv]])   else 0,\n      ctr         = if (!is.na(col_ctr))    to_num(.data[[col_ctr]])    else NA_real_,\n      avg_cpc     = if (!is.na(col_cpc))    to_num(.data[[col_cpc]])    else NA_real_,\n      conv_rate   = if (!is.na(col_cvr))    to_num(.data[[col_cvr]])    else NA_real_,\n      cost_conv   = if (!is.na(col_cpa))    to_num(.data[[col_cpa]])    else NA_real_\n    ) %&gt;%\n    filter(!is.na(campaign), campaign != \"\", campaign != \"--\")\n}\n\nstandardize_terms &lt;- function(df) {\n  col_term     &lt;- pick_col(df, c(\"search_term\",\"search_terms\",\"term\",\"query\",\"search_terms_report\"))\n  col_match    &lt;- pick_col(df, c(\"match_type\",\"keyword_match_type\"))\n  col_campaign &lt;- pick_col(df, c(\"campaign\",\"campaign_name\"))\n  col_impr     &lt;- pick_col(df, c(\"impr\",\"impressions\"))\n  col_clicks   &lt;- pick_col(df, c(\"clicks\"))\n  col_cost     &lt;- pick_col(df, c(\"cost\"))\n  col_conv     &lt;- pick_col(df, c(\"conversions\",\"conv\",\"all_conversions\"))\n  col_ctr      &lt;- pick_col(df, c(\"ctr\"))\n\n  if (is.na(col_term)) stop(\"Could not find search term column. Columns: \", paste(names(df), collapse=\", \"))\n\n  df %&gt;%\n    drop_totals() %&gt;%\n    mutate(\n      search_term = as.character(.data[[col_term]]),\n      match_type  = if (!is.na(col_match)) as.character(.data[[col_match]]) else NA_character_,\n      campaign    = if (!is.na(col_campaign)) as.character(.data[[col_campaign]]) else NA_character_,\n      clicks      = if (!is.na(col_clicks)) to_num(.data[[col_clicks]]) else NA_real_,\n      cost        = if (!is.na(col_cost))   to_num(.data[[col_cost]])   else NA_real_,\n      impressions = if (!is.na(col_impr))   to_num(.data[[col_impr]])   else NA_real_,\n      conversions = if (!is.na(col_conv))   to_num(.data[[col_conv]])   else 0,\n      ctr         = if (!is.na(col_ctr))    to_num(.data[[col_ctr]])    else NA_real_\n    ) %&gt;%\n    filter(!is.na(search_term), search_term != \"\", search_term != \"--\")\n}\nCode\ncampaign &lt;- imap_dfr(campaign_files, ~ read_ads_csv_skip2(.x) %&gt;% standardize_campaign() %&gt;% mutate(program = .y))\nterms    &lt;- imap_dfr(terms_files,    ~ read_ads_csv_skip2(.x) %&gt;% standardize_terms()    %&gt;% mutate(program = .y))\nkeywords &lt;- imap_dfr(keyword_files,  ~ read_ads_csv_skip2(.x) %&gt;% clean_names()          %&gt;% mutate(program = .y))"
+  },
+  {
+    "objectID": "TRI-adgrants_dashboard.html#overview",
+    "href": "TRI-adgrants_dashboard.html#overview",
+    "title": "TRI Google Ad Grants Dashboard (Static)",
+    "section": "Overview",
+    "text": "Overview\n\nWhat this dashboard shows\nThis dashboard summarizes TRI’s Google Ad Grants activity for CRM vs TRM using the latest exports in /data/. It focuses on volume, match-type mix, and top search themes (for non-brand demand + negative keyword opportunities).\n\n\n\nCode\nkpi &lt;- campaign %&gt;%\n  group_by(program) %&gt;%\n  summarise(\n    clicks = sum(clicks, na.rm=TRUE),\n    cost = sum(cost, na.rm=TRUE),\n    avg_cpc = cost / clicks,\n    conv = sum(conversions, na.rm=TRUE),\n    .groups = \"drop\"\n  )\n\nknitr::kable(\n  kpi %&gt;% mutate(cost = dollar(cost), avg_cpc = dollar(avg_cpc), clicks = comma(clicks), conv = comma(conv)),\n  align = \"l\"\n)\n\n\n\n\n\nprogram\nclicks\ncost\navg_cpc\nconv\n\n\n\n\nCRM\n103\n$131.40\n$1.28\n0\n\n\nTRM\n844\n$1,266.36\n$1.50\n0"
+  },
+  {
+    "objectID": "TRI-adgrants_dashboard.html#campaign-performance-crm-vs-trm",
+    "href": "TRI-adgrants_dashboard.html#campaign-performance-crm-vs-trm",
+    "title": "TRI Google Ad Grants Dashboard (Static)",
+    "section": "Campaign Performance (CRM vs TRM)",
+    "text": "Campaign Performance (CRM vs TRM)\n\nClicks by campaign\n\n\nCode\np_clicks &lt;- campaign %&gt;%\n  group_by(program, campaign) %&gt;%\n  summarise(clicks = sum(clicks, na.rm=TRUE), .groups=\"drop\") %&gt;%\n  arrange(program, clicks) %&gt;%\n  ggplot(aes(x = clicks, y = fct_reorder(campaign, clicks))) +\n  geom_col() +\n  facet_wrap(~program, scales=\"free_y\") +\n  scale_x_continuous(labels = comma) +\n  labs(title = \"Clicks by Campaign\", x = \"Clicks\", y = NULL)\np_clicks\n\n\n\n\n\n\n\n\n\n\n\nSpend by campaign\n\n\nCode\np_cost &lt;- campaign %&gt;%\n  group_by(program, campaign) %&gt;%\n  summarise(cost = sum(cost, na.rm=TRUE), .groups=\"drop\") %&gt;%\n  arrange(program, cost) %&gt;%\n  ggplot(aes(x = cost, y = fct_reorder(campaign, cost))) +\n  geom_col() +\n  facet_wrap(~program, scales=\"free_y\") +\n  scale_x_continuous(labels = dollar) +\n  labs(title = \"Spend by Campaign\", x = \"Cost ($)\", y = NULL)\np_cost"
+  },
+  {
+    "objectID": "TRI-adgrants_dashboard.html#match-type-mix-quality-proxy",
+    "href": "TRI-adgrants_dashboard.html#match-type-mix-quality-proxy",
+    "title": "TRI Google Ad Grants Dashboard (Static)",
+    "section": "Match-type mix (quality proxy)",
+    "text": "Match-type mix (quality proxy)\n\nClick share by match type (CRM vs TRM)\n\n\nCode\nmatch_share_prog &lt;- terms %&gt;%\n  filter(!is.na(match_type), match_type != \"\") %&gt;%\n  group_by(program, match_type) %&gt;%\n  summarise(clicks = sum(clicks, na.rm=TRUE), .groups=\"drop\") %&gt;%\n  group_by(program) %&gt;%\n  mutate(share = clicks / sum(clicks)) %&gt;%\n  ungroup()\n\np_match_prog &lt;- ggplot(match_share_prog, aes(x = share, y = fct_reorder(match_type, share))) +\n  geom_col() +\n  facet_wrap(~program) +\n  geom_text(aes(label = percent(share, accuracy = 0.1)), hjust = -0.1, size=3.5) +\n  scale_x_continuous(labels = percent, expand = expansion(mult = c(0, 0.2))) +\n  labs(title = \"Match-Type Mix by Program\", subtitle = \"Broad vs Phrase vs Exact\", x = \"Share of Clicks\", y = NULL)\n\np_match_prog"
+  },
+  {
+    "objectID": "TRI-adgrants_dashboard.html#search-demand-themes-top-queries",
+    "href": "TRI-adgrants_dashboard.html#search-demand-themes-top-queries",
+    "title": "TRI Google Ad Grants Dashboard (Static)",
+    "section": "Search Demand Themes (top queries)",
+    "text": "Search Demand Themes (top queries)\n\nTop search terms by program\n\n\nCode\ntop_terms_prog &lt;- terms %&gt;%\n  group_by(program, search_term) %&gt;%\n  summarise(clicks = sum(clicks, na.rm=TRUE), .groups=\"drop\") %&gt;%\n  arrange(program, desc(clicks)) %&gt;%\n  group_by(program) %&gt;%\n  slice_head(n = 8) %&gt;%\n  ungroup() %&gt;%\n  mutate(search_term = str_wrap(search_term, 28))\n\np_terms_prog &lt;- ggplot(top_terms_prog, aes(x = clicks, y = fct_reorder(search_term, clicks))) +\n  geom_col() +\n  facet_wrap(~program, scales=\"free_y\") +\n  geom_text(aes(label = comma(clicks)), hjust = -0.1, size=3.3) +\n  scale_x_continuous(labels = comma, expand = expansion(mult = c(0, 0.2))) +\n  labs(title = \"Top Search Terms by Program\", subtitle = \"Good for non-brand themes + negatives\", x = \"Clicks\", y = NULL)\n\np_terms_prog\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nInterpretation notes\n\nBroad match can uncover new demand, but usually needs strong negative keywords to avoid low-intent clicks.\nIf conversions show as 0 in export, treat this as a traffic-mix scan (not ROI). :::"
+  },
+  {
+    "objectID": "strategic-marketing.html",
+    "href": "strategic-marketing.html",
+    "title": "Technical Projects & Presentations",
+    "section": "",
+    "text": "Below are selected projects that showcase my work in strategic marketing, campaign development, analytics, and data-informed decision making."
+  },
+  {
+    "objectID": "strategic-marketing.html#tri-google-ads-optimization-campaign-strategy-grad-capstone-project-fall-2025---present",
+    "href": "strategic-marketing.html#tri-google-ads-optimization-campaign-strategy-grad-capstone-project-fall-2025---present",
+    "title": "Technical Projects & Presentations",
+    "section": "TRI Google Ads Optimization & Campaign Strategy Grad Capstone Project (Fall 2025 - Present)",
+    "text": "TRI Google Ads Optimization & Campaign Strategy Grad Capstone Project (Fall 2025 - Present)\nFor my client project with the Trauma Resource Institute (TRI), I am leading the development and optimization of Google Ads campaigns to improve lead generation and maximize the impact of the Google Ads grant.\nThis work involves auditing historical campaign performance, restructuring campaigns based on user intent, and aligning keywords, ad copy, and landing pages to drive higher-quality conversions.\n\n \n\nGroup 7 Final Capstone Presentation"
+  },
+  {
+    "objectID": "strategic-marketing.html#data-analysis-project-exploratory-data-insights-fall-2024",
+    "href": "strategic-marketing.html#data-analysis-project-exploratory-data-insights-fall-2024",
+    "title": "Technical Projects & Presentations",
+    "section": "Data Analysis Project: Exploratory Data & Insights (Fall 2024)",
+    "text": "Data Analysis Project: Exploratory Data & Insights (Fall 2024)\nI led the sourcing and development of a dataset-driven analysis project using R and Quarto. I independently identified and curated a real-world animal shelter dataset, then collaborated with my team to clean, analyze, and interpret the data to uncover meaningful insights.\nThis project focused on understanding the factors that influence animal adoption outcomes. Through data preparation, feature engineering, and statistical analysis, I examined how variables such as breed type, intake condition, age, and intake source impact the likelihood of adoption.\nThe analysis included exploratory data analysis, correlation analysis, and logistic regression modeling. During modeling, I identified multicollinearity issues across predictors, which informed how results were interpreted."
+  },
+  {
+    "objectID": "strategic-marketing.html#beyond-meat-digital-marketing-competitive-strategy-analysis-fall-2025",
+    "href": "strategic-marketing.html#beyond-meat-digital-marketing-competitive-strategy-analysis-fall-2025",
+    "title": "Technical Projects & Presentations",
+    "section": "Beyond Meat: Digital Marketing & Competitive Strategy Analysis (Fall 2025)",
+    "text": "Beyond Meat: Digital Marketing & Competitive Strategy Analysis (Fall 2025)\nIn this project, I analyzed how Beyond Meat can shift consumer behavior and increase adoption of plant-based alternatives through targeted digital marketing and strategic positioning.\nI focused specifically on evaluating digital marketing practices and the competitive landscape, identifying how Beyond Meat can compete against both traditional meat products and other plant-based brands through pricing, messaging, and channel strategy.\nBuilding on consumer behavior frameworks, I explored how marketing tactics such as search ads, retail media, and social content can influence perception, reduce adoption barriers, and drive repeat purchase behavior.\n\n \n\n\n View Full Report"
+  },
+  {
+    "objectID": "strategic-marketing.html#demand-forecasting-with-regression-machine-learning-in-the-construction-industry-spring-2025",
+    "href": "strategic-marketing.html#demand-forecasting-with-regression-machine-learning-in-the-construction-industry-spring-2025",
+    "title": "Technical Projects & Presentations",
+    "section": "Demand Forecasting with Regression & Machine Learning in the Construction Industry (Spring 2025)",
+    "text": "Demand Forecasting with Regression & Machine Learning in the Construction Industry (Spring 2025)\nThis project explores demand forecasting in a construction machinery context using both traditional statistical models and advanced machine learning techniques.\nBased on a real-world study, I analyzed how different modeling approaches-including linear regression, nonlinear regression, artificial neural networks (ANN), and support vector regression (SVR)-perform in predicting spare parts demand.\nThe analysis integrates multiple data sources, including historical ERP sales data, global machinery sales trends, exchange rates, and engineered variables such as a monthly impact rate to capture seasonality and demand fluctuations.\n\n\n \n\nAI Construction by Angela Qian"
+  },
+  {
+    "objectID": "strategic-marketing.html#daves-hot-chicken-marketing-campaign-fall-2024",
+    "href": "strategic-marketing.html#daves-hot-chicken-marketing-campaign-fall-2024",
+    "title": "Technical Projects & Presentations",
+    "section": "Dave’s Hot Chicken Marketing Campaign (Fall 2024)",
+    "text": "Dave’s Hot Chicken Marketing Campaign (Fall 2024)\nThis project presents an integrated marketing campaign strategy for Dave’s Hot Chicken, focused on expanding brand reach while maintaining its authentic, high-engagement social media presence.\nThe campaign combines organic social media growth, paid advertising, and brand experience strategies to strengthen customer engagement and drive long-term brand loyalty."
+  },
+  {
+    "objectID": "thank-you.html",
+    "href": "thank-you.html",
+    "title": "Thank you",
+    "section": "",
+    "text": "Form submitted."
+  },
+  {
+    "objectID": "contact-me.html",
+    "href": "contact-me.html",
+    "title": "Contact Me",
+    "section": "",
+    "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n   Email\n   LinkedIn\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
+  },
+  {
+    "objectID": "contact-me.html#lets-connect",
+    "href": "contact-me.html#lets-connect",
+    "title": "Contact Me",
+    "section": "",
+    "text": "Whether you’re a recruiter, hiring manager, or just someone in the same space, I’m always happy to connect.\n   Email\n   LinkedIn\n\nI’m especially interested in roles in marketing analytics, benefits analytics, and account management, where I can combine data, strategy, and implementation to drive real business impact.\n\n\n\n\n\n\nQuick Note\n\n\n\nThe best way to reach me is via email or LinkedIn. I usually respond within 24–48 hours."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Professional Resume",
+    "section": "",
+    "text": "You can view or download a PDF version of my resume here."
+  },
+  {
+    "objectID": "resume.html#professional-summary",
+    "href": "resume.html#professional-summary",
+    "title": "Professional Resume",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nDigital Marketing Analytics graduate student with a background in employee benefits, client relations, reporting, and financial analysis. Experienced in supporting large group accounts, preparing client-facing deliverables, and translating complex information into clear, actionable insights. Interested in applying data, analytics, and technology to improve strategy and reporting within the insurance and employee benefits space."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Professional Resume",
+    "section": "Education",
+    "text": "Education\nCalifornia State Polytechnic University, Pomona\nM.S. Digital Marketing (Marketing Analytics)\n\nAugust 2024 – May 2026\n\nUniversity of California, San Diego\nB.A. Communications (Marketing and Public Relations)\n\nSeptember 2016 – March 2019"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Professional Resume",
+    "section": "Experience",
+    "text": "Experience\n\nEPIC Insurance Brokers & Consultants\nClient Coordinator, Employee Benefits\nJanuary 2024 – August 2024\n\nServed as the primary point of contact for Client Executives, directly reporting on all requested deliverables to streamline compliance processes and optimize the delivery of marketing materials to clients, ensuring consistent alignment with regulatory standards and client expectations.\nStrategically managed a diverse portfolio of approximately 15 large group accounts, each with over 500 employees, alongside multiple smaller divisions, providing personalized support and proactive account management to maintain client satisfaction and retention.\nProvided expert assistance in resolving complex client and employee issues, including benefit claim disputes, eligibility concerns, and policy inquiries, ensuring timely resolution and maintaining strong client relationships.\nCultivated and sustained successful, mutually beneficial relationships with a wide network of stakeholders, including clients, insurance carriers, and third-party administrators, fostering collaboration and clear communication.\nLeveraged industry-leading BenAdmin platforms, including BenefitPoint, to accurately manage and maintain all policy details, commission structures, and documentation, ensuring transparency, compliance, and data integrity.\nDesigned and delivered comprehensive financial reports, renewal presentations, and client brochures, incorporating key marketing metrics, benchmarking data, and commission analysis to support informed decision-making and client retention strategies.\n\n\n\nSuvaun, Acrisure LLC Agency Partner\nMarketing Account Coordinator\nMarch 2020 – January 2024\n\nSpearheaded and led comprehensive pre-sale marketing initiatives for small accounts, driving targeted outreach strategies that effectively captured and engaged prospective clients while maximizing lead conversion.\nStrategically managed the end-to-end Request for Proposal (RFP) marketing process, guiding broker users from initial engagement through successful implementation, ensuring a seamless and efficient experience that met client expectations.\nCultivated and maintained strong, strategic relationships with a diverse range of carrier vendors, serving as a trusted liaison between carriers and clients, facilitating clear communication, negotiation, and conflict resolution.\nCollaborated cross-functionally with an international outsourcing team, providing expert guidance on leveraging advanced features within Suvaun, overseeing task execution to ensure accuracy, efficiency, and adherence to best practices.\nDelivered comprehensive training and onboarding programs for both internal team members and external broker partners, enhancing user proficiency and fostering a strong foundation for long-term success.\n\n\n\nL.A. Pinnacle Insurance Agency\nBenefits Marketing & Admin Assistant\nApril 2019 – March 2020\n\nSupported administration of group and individual health insurance plans, ensuring accurate enrollments, terminations, and policy updates.\nManaged day-to-day client and employee requests, including claims support, eligibility verification, and billing inquiries.\nCoordinated with carriers and vendors to resolve coverage issues and maintain compliance with policy requirements.\nPrepared renewal comparisons, rate summaries, and marketing packages to support broker recommendations.\nUtilized Excel and Word & Brown to organize client data, track plan details, and streamline reporting processes."
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Professional Resume",
+    "section": "Skills",
+    "text": "Skills\n\nAnalytics: GA4, BigQuery, SQL, R, Quarto, Looker Studio\nMarketing: Google Ads, campaign analysis, conversion tracking, reporting\nEmployee Benefits: RFP support, renewal analysis, rate guides, client reporting\nPlatforms: BenefitPoint, EASE, Employee Navigator, Microsoft Office, SharePoint, Asana"
+  },
+  {
+    "objectID": "resume.html#certifications",
+    "href": "resume.html#certifications",
+    "title": "Professional Resume",
+    "section": "Certifications",
+    "text": "Certifications\nCalifornia Department of Insurance\nIssued: 2019 Expires: 2027 Accident, Health & Life Agent License #0N12658\nCPP Data Wrangling & Visualization\nIssued Fall 2024 Bootcamp Certification"
+  },
+  {
+    "objectID": "resume.html#languages",
+    "href": "resume.html#languages",
+    "title": "Professional Resume",
+    "section": "Languages",
+    "text": "Languages\nEnglish and Mandarin Chinese"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to my Portfolio",
+    "section": "",
+    "text": "I’m a Digital Marketing Analytics graduate student pursuing opportunities at the intersection of data, technology, and insurance. With a foundation in client relations, I specialize in transforming complex data into clear, actionable insights that support strategic decision-making and improve customer outcomes."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Welcome to my Portfolio",
+    "section": "About Me",
+    "text": "About Me\nI’m currently pursuing a Master of Science in Digital Marketing (Marketing Analytics) at Cal Poly Pomona, and hold a Bachelor of Arts in Communications from UC San Diego. I have a background in client relations within the insurance industry, where I supported large group accounts and developed experience in data analysis, reporting, and strategic decision-making.\nOutside of work, I enjoy exploring new food spots, attending concerts and music festivals, and spending time with my two cats. I love experiences that bridge creativity, community, and culture."
+  },
+  {
+    "objectID": "index.html#what-i-do",
+    "href": "index.html#what-i-do",
+    "title": "Welcome to my Portfolio",
+    "section": "What I Do",
+    "text": "What I Do\nI focus on answering questions like:\n\nHow can data improve client strategy and decision-making in employee benefits?\nHow can we better analyze plan performance, costs, and trends across large group accounts?\nHow can reporting be streamlined to deliver clearer insights for clients and stakeholders?\nHow can technology and analytics tools be used to modernize traditionally manual processes?\nHow can we turn complex benefits data into clear, actionable insights?"
+  },
+  {
+    "objectID": "index.html#tools-skills",
+    "href": "index.html#tools-skills",
+    "title": "Welcome to my Portfolio",
+    "section": "Tools & Skills",
+    "text": "Tools & Skills\n\nGoogle Analytics 4 (GA4)\nGoogle Ads\nBigQuery and SQL\nR and Quarto\nTableau\nHubspot\nSPSS\nData visualization\nMarketing analytics\nClient reporting and stakeholder communication"
+  },
+  {
+    "objectID": "index.html#lets-connect",
+    "href": "index.html#lets-connect",
+    "title": "Welcome to my Portfolio",
+    "section": "Let’s Connect",
+    "text": "Let’s Connect"
+  },
+  {
+    "objectID": "ga4-metrics.html",
+    "href": "ga4-metrics.html",
+    "title": "Website Analytics (GA4)",
+    "section": "",
+    "text": "This page summarizes key Google Analytics 4 (GA4) metrics for my portfolio website. The goal is to track user behavior, traffic sources, and engagement patterns to continuously improve user experience and content performance."
+  },
+  {
+    "objectID": "ga4-metrics.html#overview",
+    "href": "ga4-metrics.html#overview",
+    "title": "Website Analytics (GA4)",
+    "section": "",
+    "text": "This page summarizes key Google Analytics 4 (GA4) metrics for my portfolio website. The goal is to track user behavior, traffic sources, and engagement patterns to continuously improve user experience and content performance."
+  },
+  {
+    "objectID": "ga4-metrics.html#key-metrics",
+    "href": "ga4-metrics.html#key-metrics",
+    "title": "Website Analytics (GA4)",
+    "section": "Key Metrics",
+    "text": "Key Metrics"
+  },
+  {
+    "objectID": "ga4-metrics.html#key-insights",
+    "href": "ga4-metrics.html#key-insights",
+    "title": "Website Analytics (GA4)",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nThe portfolio received 116 28-day active users and 21 active users during the reporting period.\nMost traffic came from the United States, which accounted for 57.1% of users.\nAdditional traffic came from Canada, the Netherlands, and the United Kingdom, while 28.6% of users were categorized as “not set.”\nUser engagement decreased throughout the funnel, with scroll activity dropping to 45.69% and user engagement dropping to 37.07%.\nOnly 5.17% of users clicked, suggesting opportunities to improve calls to action, project links, and interactive elements across the site.\nTraffic was concentrated mainly on Chrome and Safari, so future website testing should prioritize those browsers."
+  }
+]
