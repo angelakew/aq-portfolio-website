@@ -11,8 +11,28 @@ This page summarizes key Google Analytics 4 (GA4) metrics for my portfolio websi
 
 ## Key Metrics
 
-- **Users:**  
-- **Sessions:**  
-- **Engagement Rate:**  
-- **Avg. Engagement Time:**  
-- **Top Traffic Source:**  
+<div style="width: 100%; max-width: 1200px; margin: auto;">
+  <iframe
+    width="100%"
+    height="700"
+    src="https://datastudio.google.com/embed/reporting/bf867064-675c-46d7-81fc-7af7a00a96d9/page/6x3xF"
+    frameborder="0"
+    style="border:0; border-radius: 12px;"
+    allowfullscreen
+    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+  </iframe>
+</div>
+
+## Key Insights
+
+- The portfolio received **116 28-day active users** and **21 active users** during the reporting period.
+
+- Most traffic came from the **United States**, which accounted for **57.1%** of users.
+
+- Additional traffic came from Canada, the Netherlands, and the United Kingdom, while **28.6%** of users were categorized as “not set.”
+
+- User engagement decreased throughout the funnel, with scroll activity dropping to **45.69%** and user engagement dropping to **37.07%**.
+
+- Only **5.17%** of users clicked, suggesting opportunities to improve calls to action, project links, and interactive elements across the site.
+
+- Traffic was concentrated mainly on **Chrome** and **Safari**, so future website testing should prioritize those browsers.
